@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>夏夜ゆかた帖 | mirror-yukata</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="app-title">
+        <p class="eyebrow">mirror-yukata</p>
+        <h1 id="app-title">夏夜ゆかた帖</h1>
+        <p class="lead">
+          浴衣・帯・小物・キモノアレンジを選んで、パートナーに見せるための浴衣コーデオーダーカードを作るWebアプリです。
+        </p>
+      </section>
+
+      <section class="builder" aria-label="浴衣コーデ選択">
+        <div class="controls">
+          <label>
+            衣装タイプ
+            <select id="styleType"></select>
+          </label>
+
+          <label>
+            浴衣カラー
+            <select id="yukataColor"></select>
+          </label>
+
+          <label>
+            柄
+            <select id="pattern"></select>
+          </label>
+
+          <label>
+            帯
+            <select id="obi"></select>
+          </label>
+
+          <label>
+            小物
+            <select id="item"></select>
+          </label>
+
+          <label id="arrangeLabel">
+            キモノアレンジ
+            <select id="arrange"></select>
+          </label>
+        </div>
+
+        <article class="coord-card" aria-live="polite">
+          <p class="card-kicker">浴衣コーデオーダーカード</p>
+          <h2 id="coordName"></h2>
+          <p id="coordDescription"></p>
+
+          <div class="chips" id="colorChips"></div>
+
+          <dl class="details" id="coordDetails"></dl>
+
+          <div class="order-box">
+            <p class="order-title">生成オーダー</p>
+            <p id="orderText"></p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
