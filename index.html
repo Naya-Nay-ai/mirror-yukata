@@ -52,10 +52,12 @@
         <article class="coord-card" aria-live="polite">
           <p class="card-kicker">浴衣コーデオーダーカード</p>
           <div class="visual-preview" aria-label="浴衣プレビュー">
-            <div class="yukata-preview-wrapper">
-              <img id="yukataBodyPreview" class="yukata-layer" src="" alt="" />
-              <img id="yukataObiPreview" class="yukata-layer" src="" alt="" />
-            </div>
+          <div class="yukata-preview-wrapper">
+            <div id="yukataBodyFillPreview" class="yukata-layer yukata-fill-layer" aria-hidden="true"></div>
+            <div id="yukataObiFillPreview" class="yukata-layer yukata-fill-layer" aria-hidden="true"></div>
+            <img id="yukataBodyPreview" class="yukata-layer yukata-line-layer" src="" alt="" />
+            <img id="yukataObiPreview" class="yukata-layer yukata-line-layer" src="" alt="" />
+         </div>
             <p id="previewCaption" class="preview-caption"></p>
           </div>
           <h2 id="coordName"></h2>
