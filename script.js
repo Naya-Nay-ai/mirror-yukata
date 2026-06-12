@@ -14,16 +14,22 @@ const orderText = document.querySelector("#orderText");
 const yukataBodyPreview = document.querySelector("#yukataBodyPreview");
 const yukataObiPreview = document.querySelector("#yukataObiPreview");
 const previewCaption = document.querySelector("#previewCaption");
+const yukataBodyFillPreview = document.querySelector("#yukataBodyFillPreview");
+const yukataObiFillPreview = document.querySelector("#yukataObiFillPreview");
 
 const previewAssets = {
   women: {
     body: "assets/svg/women-yukata-basic.svg",
     obi: "assets/svg/women-obi-basic.svg",
+    bodyFill: "assets/svg/women-yukata-fill.svg",
+    obiFill: "assets/svg/women-obi-fill.svg",
     caption: "女性浴衣プレビュー",
   },
   men: {
     body: "assets/svg/men-yukata-basic.svg",
     obi: "assets/svg/men_obi-basic.svg",
+    bodyFill: "assets/svg/men-yukata-fill.svg",
+    obiFill: "assets/svg/men-obi-fill.svg",
     caption: "男性浴衣プレビュー",
   },
 };
@@ -43,6 +49,25 @@ const options = {
 
   yukataColors: {
     women: [
+yukataColors: {
+  women: [
+    { id: "indigo", label: "藍色", color: "#274060" },
+    { id: "pink", label: "撫子ピンク", color: "#e9a4b7" },
+    { id: "wisteria", label: "薄藤", color: "#b7a7d6" },
+    { id: "ivory", label: "生成り", color: "#f4ead8" },
+    { id: "asagi", label: "浅葱色", color: "#6fb7bd" },
+    { id: "black", label: "墨黒", color: "#2b2b2f" },
+  ],
+  men: [
+    { id: "navy", label: "紺", color: "#253858" },
+    { id: "charcoal", label: "墨黒", color: "#2b2b2f" },
+    { id: "bluegray", label: "灰青", color: "#6f8494" },
+    { id: "green", label: "深緑", color: "#2f5a46" },
+    { id: "ivory", label: "生成り", color: "#f4ead8" },
+    { id: "brown", label: "焦茶", color: "#5a3f32" },
+  ],
+},
+    
       {
         id: "navy",
         label: "藍色",
@@ -132,7 +157,24 @@ const options = {
       },
     ],
   },
-
+obi: {
+  women: [
+    { id: "ivory", label: "生成り", color: "#f4ead8" },
+    { id: "red", label: "朱赤", color: "#c94b45" },
+    { id: "yellow", label: "山吹", color: "#d9a441" },
+    { id: "purple", label: "葡萄色", color: "#6f3f62" },
+    { id: "gold", label: "くすみ金", color: "#b89b5e" },
+    { id: "white", label: "白", color: "#ffffff" },
+  ],
+  men: [
+    { id: "black", label: "黒", color: "#242424" },
+    { id: "navy", label: "濃紺", color: "#1f2f4d" },
+    { id: "brown", label: "焦茶", color: "#5a3f32" },
+    { id: "gray", label: "灰色", color: "#77777a" },
+    { id: "ivory", label: "生成り", color: "#f4ead8" },
+    { id: "green", label: "深緑", color: "#2f5a46" },
+  ],
+},
   patterns: {
     women: [
       {
@@ -541,12 +583,33 @@ function renderDetails(selection) {
   }
 }
 
+function setMaskLayer(layer, assetPath, color) {
+  layer.style.backgroundColor = color;
+  layer.style.webkitMaskImage = `url("${assetPath}")`;
+  layer.style.maskImage = `url("${assetPath}")`;
+  layer.style.webkitMaskRepeat = "no-repeat";
+  layer.style.maskRepeat = "no-repeat";
+  layer.style.webkitMaskPosition = "center";
+  layer.style.maskPosition = "center";
+  layer.style.webkitMaskSize = "contain";
+  layer.style.maskSize = "contain";
+}
+
 function renderPreview(selection) {
-  if (!yukataBodyPreview || !yukataObiPreview || !previewCaption) {
+  if (
+    !yukataBodyPreview ||
+    !yukataObiPreview ||
+    !yukataBodyFillPreview ||
+    !yukataObiFillPreview ||
+    !previewCaption
+  ) {
     return;
   }
 
   const assets = previewAssets[selection.type];
+
+  setMaskLayer(yukataBodyFillPreview, assets.bodyFill, selection.yukataColor.color);
+  setMaskLayer(yukataObiFillPreview, assets.obiFill, selection.obi.color);
 
   yukataBodyPreview.src = assets.body;
   yukataObiPreview.src = assets.obi;
