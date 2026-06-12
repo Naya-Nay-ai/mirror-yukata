@@ -558,9 +558,9 @@ function renderCard() {
   coordDescription.textContent = createDescription(selection);
   orderText.textContent = createOrderText(selection);
 
-renderColorChips(selection);
-renderDetails(selection);
-renderPreview(selection);
+ renderColorChips(selection);
+ renderDetails(selection);
+ renderPreview(selection);
 }
 
 function refreshOptionsForType() {
