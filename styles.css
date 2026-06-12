@@ -328,3 +328,34 @@ h2 {
     box-shadow: none;
   }
 }
+.visual-preview {
+  margin: 0 0 24px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.yukata-preview-wrapper {
+  position: relative;
+  width: min(260px, 76vw);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+}
+
+.yukata-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.preview-caption {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-align: center;
+}

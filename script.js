@@ -11,7 +11,22 @@ const coordDescription = document.querySelector("#coordDescription");
 const colorChips = document.querySelector("#colorChips");
 const coordDetails = document.querySelector("#coordDetails");
 const orderText = document.querySelector("#orderText");
+const yukataBodyPreview = document.querySelector("#yukataBodyPreview");
+const yukataObiPreview = document.querySelector("#yukataObiPreview");
+const previewCaption = document.querySelector("#previewCaption");
 
+const previewAssets = {
+  women: {
+    body: "assets/svg/women-yukata-basic.svg",
+    obi: "assets/svg/women-obi-basic.svg",
+    caption: "女性浴衣プレビュー",
+  },
+  men: {
+    body: "assets/svg/men-yukata-basic.svg",
+    obi: "assets/svg/men_obi-basic.svg",
+    caption: "男性浴衣プレビュー",
+  },
+};
 const options = {
   styleTypes: [
     {
@@ -526,6 +541,18 @@ function renderDetails(selection) {
   }
 }
 
+function renderPreview(selection) {
+  if (!yukataBodyPreview || !yukataObiPreview || !previewCaption) {
+    return;
+  }
+
+  const assets = previewAssets[selection.type];
+
+  yukataBodyPreview.src = assets.body;
+  yukataObiPreview.src = assets.obi;
+  previewCaption.textContent = assets.caption;
+}
+
 function renderCard() {
   const selection = getCurrentSelection();
 
@@ -535,6 +562,7 @@ function renderCard() {
 
   renderColorChips(selection);
   renderDetails(selection);
+  renderPreview(selection);
 }
 
 function refreshOptionsForType() {
