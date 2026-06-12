@@ -540,6 +540,7 @@ function renderDetails(selection) {
     addDetail("キモノアレンジ", selection.arrange.detail);
   }
 }
+
 function renderPreview(selection) {
   if (!yukataBodyPreview || !yukataObiPreview || !previewCaption) {
     return;
@@ -551,6 +552,7 @@ function renderPreview(selection) {
   yukataObiPreview.src = assets.obi;
   previewCaption.textContent = assets.caption;
 }
+
 function renderCard() {
   const selection = getCurrentSelection();
 
@@ -558,9 +560,9 @@ function renderCard() {
   coordDescription.textContent = createDescription(selection);
   orderText.textContent = createOrderText(selection);
 
- renderColorChips(selection);
- renderDetails(selection);
- renderPreview(selection);
+  renderColorChips(selection);
+  renderDetails(selection);
+  renderPreview(selection);
 }
 
 function refreshOptionsForType() {
