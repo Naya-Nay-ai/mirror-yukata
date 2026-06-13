@@ -352,6 +352,31 @@ h2 {
   pointer-events: none;
 }
 
+.yukata-fill-layer {
+  background-color: currentColor;
+}
+
+.yukata-line-layer {
+  z-index: 2;
+}
+
+#yukataBodyFillPreview {
+  z-index: 0;
+}
+
+#yukataBodyPreview {
+  z-index: 1;
+}
+
+#yukataObiPreview {
+  z-index: 2;
+}
+
+#yukataObiFillPreview {
+  z-index: 3;
+  mix-blend-mode: multiply;
+}
+
 .preview-caption {
   margin: 10px 0 0;
   color: var(--muted);

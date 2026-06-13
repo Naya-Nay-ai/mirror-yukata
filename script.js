@@ -14,16 +14,22 @@ const orderText = document.querySelector("#orderText");
 const yukataBodyPreview = document.querySelector("#yukataBodyPreview");
 const yukataObiPreview = document.querySelector("#yukataObiPreview");
 const previewCaption = document.querySelector("#previewCaption");
+const yukataBodyFillPreview = document.querySelector("#yukataBodyFillPreview");
+const yukataObiFillPreview = document.querySelector("#yukataObiFillPreview");
 
 const previewAssets = {
   women: {
     body: "assets/svg/women-yukata-basic.svg",
     obi: "assets/svg/women-obi-basic.svg",
+    bodyFill: "assets/svg/women-yukata-fill.svg",
+    obiFill: "assets/svg/women-obi-fill.svg",
     caption: "女性浴衣プレビュー",
   },
   men: {
     body: "assets/svg/men-yukata-basic.svg",
     obi: "assets/svg/men_obi-basic.svg",
+    bodyFill: "assets/svg/men-yukata-fill.svg",
+    obiFill: "assets/svg/men-obi-fill.svg",
     caption: "男性浴衣プレビュー",
   },
 };
@@ -541,18 +547,47 @@ function renderDetails(selection) {
   }
 }
 
+function setMaskLayer(layer, assetPath, color) {
+  layer.style.backgroundColor = color;
+  layer.style.webkitMaskImage = `url("${assetPath}")`;
+  layer.style.maskImage = `url("${assetPath}")`;
+  layer.style.webkitMaskRepeat = "no-repeat";
+  layer.style.maskRepeat = "no-repeat";
+  layer.style.webkitMaskPosition = "center";
+  layer.style.maskPosition = "center";
+  layer.style.webkitMaskSize = "contain";
+  layer.style.maskSize = "contain";
+}
+
 function renderPreview(selection) {
-  if (!yukataBodyPreview || !yukataObiPreview || !previewCaption) {
+  if (
+    !yukataBodyPreview ||
+    !yukataObiPreview ||
+    !yukataBodyFillPreview ||
+    !yukataObiFillPreview ||
+    !previewCaption
+  ) {
     return;
   }
 
   const assets = previewAssets[selection.type];
 
+  setMaskLayer(
+    yukataBodyFillPreview,
+    assets.bodyFill,
+    selection.yukataColor.swatch,
+  );
+
+  setMaskLayer(
+    yukataObiFillPreview,
+    assets.obiFill,
+    selection.obi.swatch,
+  );
+
   yukataBodyPreview.src = assets.body;
   yukataObiPreview.src = assets.obi;
   previewCaption.textContent = assets.caption;
 }
-
 function renderCard() {
   const selection = getCurrentSelection();
 
