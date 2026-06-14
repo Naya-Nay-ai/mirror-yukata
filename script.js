@@ -570,15 +570,16 @@ function setMaskLayer(layer, assetPath, color) {
 }
 
 function renderPreview(selection) {
-  if (
-    !yukataBodyPreview ||
-    !yukataObiPreview ||
-    !yukataBodyFillPreview ||
-    !yukataObiFillPreview ||
-    !previewCaption
-  ) {
-    return;
-  }
+if (
+  !yukataBodyPreview ||
+  !yukataObiPreview ||
+  !yukataBodyFillPreview ||
+  !yukataObiFillPreview ||
+  !yukataPatternPreview ||
+  !previewCaption
+) {
+  return;
+}
 
   const assets = previewAssets[selection.type];
   const patternAsset =
