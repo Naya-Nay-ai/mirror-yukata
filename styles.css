@@ -364,16 +364,20 @@ h2 {
   z-index: 0;
 }
 
-#yukataBodyPreview {
+#yukataPatternPreview {
   z-index: 1;
 }
 
-#yukataObiPreview {
+#yukataBodyPreview {
   z-index: 2;
 }
 
-#yukataObiFillPreview {
+#yukataObiPreview {
   z-index: 3;
+}
+
+#yukataObiFillPreview {
+  z-index: 4;
   mix-blend-mode: multiply;
 }
 

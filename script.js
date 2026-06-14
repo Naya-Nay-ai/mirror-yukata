@@ -14,6 +14,7 @@ const orderText = document.querySelector("#orderText");
 const yukataBodyPreview = document.querySelector("#yukataBodyPreview");
 const yukataObiPreview = document.querySelector("#yukataObiPreview");
 const previewCaption = document.querySelector("#previewCaption");
+const yukataPatternPreview = document.querySelector("#yukataPatternPreview");
 const yukataBodyFillPreview = document.querySelector("#yukataBodyFillPreview");
 const yukataObiFillPreview = document.querySelector("#yukataObiFillPreview");
 
@@ -33,6 +34,15 @@ const previewAssets = {
     caption: "男性浴衣プレビュー",
   },
 };
+const patternPreviewAssets = {
+  women: {
+    asagao: "assets/svg/patterns/women-asagao.svg",
+  },
+  men: {
+    stripe: "assets/svg/patterns/men-stripe.svg",
+  },
+};
+
 const options = {
   styleTypes: [
     {
@@ -560,18 +570,20 @@ function setMaskLayer(layer, assetPath, color) {
 }
 
 function renderPreview(selection) {
-  if (
-    !yukataBodyPreview ||
-    !yukataObiPreview ||
-    !yukataBodyFillPreview ||
-    !yukataObiFillPreview ||
-    !previewCaption
-  ) {
-    return;
-  }
+if (
+  !yukataBodyPreview ||
+  !yukataObiPreview ||
+  !yukataBodyFillPreview ||
+  !yukataObiFillPreview ||
+  !yukataPatternPreview ||
+  !previewCaption
+) {
+  return;
+}
 
   const assets = previewAssets[selection.type];
-
+  const patternAsset =
+    patternPreviewAssets[selection.type]?.[selection.pattern.id] ?? "";
   setMaskLayer(
     yukataBodyFillPreview,
     assets.bodyFill,
@@ -584,6 +596,7 @@ function renderPreview(selection) {
     selection.obi.swatch,
   );
 
+  yukataPatternPreview.src = patternAsset;
   yukataBodyPreview.src = assets.body;
   yukataObiPreview.src = assets.obi;
   previewCaption.textContent = assets.caption;
