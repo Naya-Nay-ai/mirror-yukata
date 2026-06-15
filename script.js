@@ -41,6 +41,7 @@ const patternPreviewAssets = {
     hanabi: "assets/svg/patterns/women-hanabi.png",
     tsubaki: "assets/svg/patterns/women-tsubaki.png",
     ryusui: "assets/svg/patterns/women-ryusui.png",
+    moon-gradient: "assets/svg/patterns/women-tsukiyo.png",
   },
   men: {
     stripe: "assets/svg/patterns/men-stripe.svg",
