@@ -41,6 +41,7 @@ const patternPreviewAssets = {
     hanabi: "assets/svg/patterns/women-hanabi.png",
     tsubaki: "assets/svg/patterns/women-tsubaki.png",
     ryusui: "assets/svg/patterns/women-ryusui.png",
+    kurage: "assets/svg/patterns/women-kurage.png",
     "moon-gradient": "assets/svg/patterns/women-tsukiyo.png",
   },
   men: {
@@ -196,6 +197,14 @@ const options = {
         mood: "しっとりした",
         orderText: "流水柄",
       },
+     {
+　　　　id: "kurage",
+ 　　　 label: "海月",
+ 　　　 category: "モダン",
+ 　　　 namePart: "海月",
+ 　　　 mood: "透明感のある",
+　　　  orderText: "淡い光をまとった海月柄",
+      },      
       {
         id: "moon-gradient",
         label: "月夜グラデーション",
