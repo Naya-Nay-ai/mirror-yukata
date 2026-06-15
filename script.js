@@ -39,6 +39,7 @@ const patternPreviewAssets = {
     asagao: "assets/svg/patterns/women-asagao.svg",
     kingyo: "assets/svg/patterns/women-kingyo.png",
     hanabi: "assets/svg/patterns/women-hanabi.png",
+    tsubaki: "assets/svg/patterns/women-tsubaki.png",
   },
   men: {
     stripe: "assets/svg/patterns/men-stripe.svg",
