@@ -323,83 +323,131 @@ const options = {
   },
 
   obi: {
-    women: [
-      {
-        id: "kinari",
-        label: "生成り",
-        swatch: "#f3ead8",
-        orderText: "生成りの帯",
-      },
-      {
-        id: "red",
-        label: "朱赤",
-        swatch: "#c8544b",
-        orderText: "朱赤の帯",
-      },
-      {
-        id: "yamabuki",
-        label: "山吹",
-        swatch: "#e2ae42",
-        orderText: "山吹色の帯",
-      },
-      {
-        id: "budou",
-        label: "葡萄色",
-        swatch: "#6d3b6f",
-        orderText: "葡萄色の帯",
-      },
-      {
-        id: "gold",
-        label: "くすみ金",
-        swatch: "#c9a25d",
-        orderText: "くすみ金の帯",
-      },
-      {
-        id: "white",
-        label: "白",
-        swatch: "#ffffff",
-        orderText: "白い帯",
-      },
-    ],
+women: [
+  {
+    id: "red",
+    label: "朱赤",
+    swatch: "#c8544b",
+    orderText: "朱赤の帯",
+  },
+  {
+    id: "usumomo",
+    label: "薄桃",
+    swatch: "#e7b3bf",
+    orderText: "淡い薄桃色の帯",
+  },
+  {
+    id: "yamabuki",
+    label: "山吹",
+    swatch: "#e2ae42",
+    orderText: "山吹色の帯",
+  },
+  {
+    id: "gold",
+    label: "くすみ金",
+    swatch: "#c9a25d",
+    orderText: "くすみ金の帯",
+  },
+  {
+    id: "budou",
+    label: "葡萄色",
+    swatch: "#6d3b6f",
+    orderText: "葡萄色の帯",
+  },
+  {
+    id: "ruri",
+    label: "瑠璃",
+    swatch: "#315ba8",
+    orderText: "鮮やかな瑠璃色の帯",
+  },
+  {
+    id: "turquoise",
+    label: "青緑",
+    swatch: "#2f9b91",
+    orderText: "鮮やかな青緑色の帯",
+  },
+  {
+    id: "white",
+    label: "白",
+    swatch: "#ffffff",
+    orderText: "白い帯",
+  },
+  {
+    id: "kinari",
+    label: "生成り",
+    swatch: "#f3ead8",
+    orderText: "生成りの帯",
+  },
+  {
+    id: "black",
+    label: "墨黒",
+    swatch: "#29262d",
+    orderText: "墨黒の帯",
+  },
+],
 
-    men: [
-      {
-        id: "black",
-        label: "黒",
-        swatch: "#222222",
-        orderText: "黒い帯",
-      },
-      {
-        id: "navy",
-        label: "濃紺",
-        swatch: "#1d2d52",
-        orderText: "濃紺の帯",
-      },
-      {
-        id: "brown",
-        label: "焦茶",
-        swatch: "#5b3b2f",
-        orderText: "焦茶の帯",
-      },
-      {
-        id: "gray",
-        label: "灰色",
-        swatch: "#777d86",
-        orderText: "灰色の帯",
-      },
-      {
-        id: "kinari",
-        label: "生成り",
-        swatch: "#f3ead8",
-        orderText: "生成りの帯",
-      },
-      {
-        id: "green",
-        label: "深緑",
-        swatch: "#2f5a4a",
-        orderText: "深緑の帯",
-      },
-    ],
+men: [
+  {
+    id: "enji",
+    label: "臙脂",
+    swatch: "#793743",
+    orderText: "深い臙脂色の帯",
+  },
+  {
+    id: "yamabuki",
+    label: "山吹",
+    swatch: "#c99a32",
+    orderText: "落ち着いた山吹色の帯",
+  },
+  {
+    id: "brown",
+    label: "焦茶",
+    swatch: "#5b3b2f",
+    orderText: "焦茶の帯",
+  },
+  {
+    id: "navy",
+    label: "濃紺",
+    swatch: "#1d2d52",
+    orderText: "濃紺の帯",
+  },
+  {
+    id: "seiji",
+    label: "青磁",
+    swatch: "#739b91",
+    orderText: "青磁色の帯",
+  },
+  {
+    id: "green",
+    label: "深緑",
+    swatch: "#2f5a4a",
+    orderText: "深緑の帯",
+  },
+  {
+    id: "kinari",
+    label: "生成り",
+    swatch: "#f3ead8",
+    orderText: "生成りの帯",
+  },
+  {
+    id: "ginnezu",
+    label: "銀鼠",
+    swatch: "#aaa8ae",
+    orderText: "銀鼠色の帯",
+  },
+  {
+    id: "gray",
+    label: "灰色",
+    swatch: "#777d86",
+    orderText: "灰色の帯",
+  },
+  {
+    id: "black",
+    label: "黒",
+    swatch: "#222222",
+    orderText: "黒い帯",
+  },
+],
   },
 
   items: {
