@@ -66,11 +66,11 @@ const options = {
   yukataColors: {
     women: [
       {
-        id: "navy",
-        label: "藍色",
-        swatch: "#263d73",
-        mood: "凛とした",
-        orderText: "深い藍色の浴衣",
+        id: "enji",
+        label: "臙脂",
+        swatch: "#8f3545",
+        mood: "艶やかで落ち着いた",
+        orderText: "深い臙脂色の浴衣",
       },
       {
         id: "nadeshiko",
@@ -80,6 +80,13 @@ const options = {
         orderText: "撫子ピンクの浴衣",
       },
       {
+        id: "budou",
+        label: "葡萄色",
+        swatch: "#684b73",
+        mood: "しっとり華やかな",
+        orderText: "葡萄色の浴衣",
+      },
+      {
         id: "wisteria",
         label: "薄藤",
         swatch: "#b9a7db",
@@ -87,11 +94,11 @@ const options = {
         orderText: "薄藤色の浴衣",
       },
       {
-        id: "kinari",
-        label: "生成り",
-        swatch: "#f3ead8",
-        mood: "やさしく抜け感のある",
-        orderText: "生成り色の浴衣",
+        id: "navy",
+        label: "藍色",
+        swatch: "#263d73",
+        mood: "凛とした",
+        orderText: "深い藍色の浴衣",
       },
       {
         id: "asagi",
@@ -99,6 +106,27 @@ const options = {
         swatch: "#6fb7bd",
         mood: "爽やかな",
         orderText: "浅葱色の浴衣",
+      },
+      {
+        id: "shiraai",
+        label: "白藍",
+        swatch: "#c6dce6",
+        mood: "淡く透明感のある",
+        orderText: "白藍色の浴衣",
+      },
+      {
+        id: "fukamidori",
+        label: "深緑",
+        swatch: "#31594d",
+        mood: "静かで気品のある",
+        orderText: "深緑色の浴衣",
+      },
+      {
+        id: "kinari",
+        label: "生成り",
+        swatch: "#f3ead8",
+        mood: "やさしく抜け感のある",
+        orderText: "生成り色の浴衣",
       },
       {
         id: "sumi",
@@ -111,6 +139,20 @@ const options = {
 
     men: [
       {
+        id: "enji",
+        label: "臙脂",
+        swatch: "#753642",
+        mood: "渋く色気のある",
+        orderText: "臙脂色の男性浴衣",
+      },
+      {
+        id: "fujinezu",
+        label: "藤鼠",
+        swatch: "#786f88",
+        mood: "上品で柔らかな",
+        orderText: "藤鼠色の男性浴衣",
+      },
+      {
         id: "kon",
         label: "紺",
         swatch: "#24375f",
@@ -118,18 +160,18 @@ const options = {
         orderText: "紺色の男性浴衣",
       },
       {
-        id: "sumi",
-        label: "墨黒",
-        swatch: "#2c2a31",
-        mood: "端正で渋い",
-        orderText: "墨黒の男性浴衣",
-      },
-      {
         id: "haiao",
         label: "灰青",
         swatch: "#6f8298",
         mood: "涼しげで静かな",
         orderText: "灰青色の男性浴衣",
+      },
+      {
+        id: "seiji",
+        label: "青磁",
+        swatch: "#719b91",
+        mood: "穏やかで涼やかな",
+        orderText: "青磁色の男性浴衣",
       },
       {
         id: "fukamidori",
@@ -146,15 +188,28 @@ const options = {
         orderText: "生成り色の男性浴衣",
       },
       {
+        id: "shiracha",
+        label: "白茶",
+        swatch: "#d4c1a5",
+        mood: "軽やかで品のある",
+        orderText: "白茶色の男性浴衣",
+      },
+      {
         id: "kogecha",
         label: "焦茶",
         swatch: "#5b3b2f",
         mood: "渋く温かみのある",
         orderText: "焦茶色の男性浴衣",
       },
+      {
+        id: "sumi",
+        label: "墨黒",
+        swatch: "#2c2a31",
+        mood: "端正で渋い",
+        orderText: "墨黒の男性浴衣",
+      },
     ],
   },
-
   patterns: {
     women: [
       {
@@ -197,14 +252,14 @@ const options = {
         mood: "しっとりした",
         orderText: "流水柄",
       },
-     {
-　　　　id: "kurage",
- 　　　 label: "海月",
- 　　　 category: "モダン",
- 　　　 namePart: "海月",
- 　　　 mood: "透明感のある",
-　　　  orderText: "淡い光をまとった海月柄",
-      },      
+      {
+        id: "kurage",
+        label: "海月",
+        category: "モダン",
+        namePart: "海月",
+        mood: "透明感のある",
+        orderText: "淡い光をまとった海月柄",
+      },
       {
         id: "moon-gradient",
         label: "月夜グラデーション",
