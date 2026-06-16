@@ -473,23 +473,28 @@ men: [
       },
     ],
 
-    men: [
-      {
-        id: "none",
-        label: "なし",
-        orderText: "持ち物なし",
-      },
-      {
-        id: "shingen",
-        label: "信玄袋",
-        orderText: "信玄袋",
-      },
-      {
-        id: "sensu",
-        label: "扇子",
-        orderText: "扇子",
-      },
-    ],
+men: [
+  {
+    id: "none",
+    label: "なし",
+    orderText: "持ち物なし",
+  },
+  {
+    id: "shingen",
+    label: "信玄袋",
+    orderText: "信玄袋",
+  },
+  {
+    id: "sensu",
+    label: "扇子",
+    orderText: "扇子",
+  },
+  {
+    id: "uchiwa",
+    label: "団扇",
+    orderText: "団扇",
+  },
+],
   },
 
   arrangeSets: [
@@ -593,9 +598,14 @@ function createCoordName(selection) {
 }
 
 function createDescription(selection) {
-  if (selection.type === "men") {
-    return `${selection.yukataColor.mood}${selection.yukataColor.label}の浴衣に、${selection.pattern.mood}${selection.pattern.label}を合わせた男性浴衣コーデ。${selection.obi.label}の帯と${selection.item.label}で、花火の夜にすっと馴染む装いに。`;
-  }
+if (selection.type === "men") {
+  const itemText =
+    selection.item.id === "none"
+      ? ""
+      : `${selection.item.label}を添えて、`;
+
+  return `${selection.yukataColor.mood}${selection.yukataColor.label}の浴衣に、${selection.pattern.mood}${selection.pattern.label}を合わせた男性浴衣コーデ。${selection.obi.label}の帯で引き締め、${itemText}花火の夜にすっと馴染む装いに。`;
+}
 
   const arrangeText =
     selection.arrange && selection.arrange.id !== "none"
