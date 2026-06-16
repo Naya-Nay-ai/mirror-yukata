@@ -44,8 +44,12 @@ const patternPreviewAssets = {
     kurage: "assets/svg/patterns/women-kurage.png",
     "moon-gradient": "assets/svg/patterns/women-tsukiyo.png",
   },
-  men: {
-    stripe: "assets/svg/patterns/men-stripe.svg",
+men: {
+  stripe: "assets/svg/patterns/men-stripe.svg",
+  ichimatsu: "assets/svg/patterns/men-ichimatsu.png",
+  ryusui: "assets/svg/patterns/men-ryusui.png",
+  tonbo: "assets/svg/patterns/men-tonbo.png",
+  geometric: "assets/svg/patterns/men-geometric.png",
   },
 };
 
