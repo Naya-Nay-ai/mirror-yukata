@@ -473,23 +473,28 @@ men: [
       },
     ],
 
-    men: [
-      {
-        id: "none",
-        label: "なし",
-        orderText: "持ち物なし",
-      },
-      {
-        id: "shingen",
-        label: "信玄袋",
-        orderText: "信玄袋",
-      },
-      {
-        id: "sensu",
-        label: "扇子",
-        orderText: "扇子",
-      },
-    ],
+men: [
+  {
+    id: "none",
+    label: "なし",
+    orderText: "持ち物なし",
+  },
+  {
+    id: "shingen",
+    label: "信玄袋",
+    orderText: "信玄袋",
+  },
+  {
+    id: "sensu",
+    label: "扇子",
+    orderText: "扇子",
+  },
+  {
+    id: "uchiwa",
+    label: "団扇",
+    orderText: "団扇",
+  },
+],
   },
 
   arrangeSets: [
