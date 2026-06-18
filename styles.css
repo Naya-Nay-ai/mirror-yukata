@@ -388,3 +388,6 @@ h2 {
   font-weight: 700;
   text-align: center;
 }
+#yukataItemPreview {
+  z-index: 5;
+}

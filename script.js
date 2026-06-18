@@ -17,6 +17,7 @@ const previewCaption = document.querySelector("#previewCaption");
 const yukataPatternPreview = document.querySelector("#yukataPatternPreview");
 const yukataBodyFillPreview = document.querySelector("#yukataBodyFillPreview");
 const yukataObiFillPreview = document.querySelector("#yukataObiFillPreview");
+const yukataItemPreview = document.querySelector("#yukataItemPreview");
 
 const previewAssets = {
   women: {
@@ -50,6 +51,15 @@ men: {
   ryusui: "assets/svg/patterns/men-ryusui.png",
   tonbo: "assets/svg/patterns/men-tonbo.png",
   geometric: "assets/svg/patterns/men-geometric.png",
+  },
+};
+
+const itemPreviewAssets = {
+  women: {},
+  men: {
+    shingen: "assets/svg/item/men-item-shingen.png",
+    sensu: "assets/svg/item/men-item-sensu.png",
+    uchiwa: "assets/svg/item/men-item-uchiwa.png",
   },
 };
 
@@ -707,6 +717,7 @@ if (
   !yukataBodyFillPreview ||
   !yukataObiFillPreview ||
   !yukataPatternPreview ||
+  !yukataItemPreview ||
   !previewCaption
 ) {
   return;
@@ -731,6 +742,18 @@ if (
   yukataBodyPreview.src = assets.body;
   yukataObiPreview.src = assets.obi;
   previewCaption.textContent = assets.caption;
+
+  const itemAsset =
+    itemPreviewAssets[selection.type]?.[selection.item.id] ?? "";
+
+  if (itemAsset) {
+    yukataItemPreview.src = itemAsset;
+    yukataItemPreview.hidden = false;
+  } else {
+    yukataItemPreview.removeAttribute("src");
+    yukataItemPreview.hidden = true;
+  }
+  
 }
 function renderCard() {
   const selection = getCurrentSelection();
