@@ -832,9 +832,6 @@ function refreshOptionsForType() {
   renderCard();
 }
 
-  renderCard();
-}
-
 function init() {
   fillSelect(styleTypeSelect, options.styleTypes);
   fillSelect(arrangeSelect, options.arrangeSets);
