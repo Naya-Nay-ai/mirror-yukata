@@ -3,6 +3,7 @@ const yukataColorSelect = document.querySelector("#yukataColor");
 const patternSelect = document.querySelector("#pattern");
 const obiSelect = document.querySelector("#obi");
 const itemSelect = document.querySelector("#item");
+const footwearSelect = document.querySelector("#footwear");
 const arrangeSelect = document.querySelector("#arrange");
 const arrangeLabel = document.querySelector("#arrangeLabel");
 
@@ -507,6 +508,34 @@ men: [
 ],
   },
 
+footwear: {
+  women: [
+    {
+      id: "geta",
+      label: "下駄",
+      orderText: "下駄",
+    },
+  ],
+
+  men: [
+    {
+      id: "yakigeta",
+      label: "焼桐下駄",
+      orderText: "焼桐の下駄",
+    },
+    {
+      id: "black-hanao-geta",
+      label: "黒鼻緒の下駄",
+      orderText: "黒鼻緒の下駄",
+    },
+    {
+      id: "setta",
+      label: "雪駄",
+      orderText: "雪駄",
+    },
+  ],
+},
+  
   arrangeSets: [
     {
       id: "none",
@@ -571,6 +600,12 @@ function getCurrentType() {
 
 function getCurrentSelection() {
   const type = getCurrentType();
+  const item = findSelected(options.items[type], itemSelect.value);
+  const footwear = findSelected(
+  options.footwear[type],
+  footwearSelect.value,
+);
+  
 
   const yukataColor = findSelected(
     options.yukataColors[type],
@@ -579,6 +614,7 @@ function getCurrentSelection() {
   const pattern = findSelected(options.patterns[type], patternSelect.value);
   const obi = findSelected(options.obi[type], obiSelect.value);
   const item = findSelected(options.items[type], itemSelect.value);
+  const footwear = findSelected(options.footwear[type],footwearSelect.value,);
   const arrange =
     type === "women"
       ? findSelected(options.arrangeSets, arrangeSelect.value)
@@ -591,6 +627,7 @@ function getCurrentSelection() {
     pattern,
     obi,
     item,
+    footwear,
     arrange,
   };
 }
@@ -626,12 +663,12 @@ if (selection.type === "men") {
 }
 
 function createOrderText(selection) {
-  const baseParts = [
-    selection.yukataColor.orderText,
-    selection.pattern.orderText,
-    selection.obi.orderText,
-    "下駄",
-  ];
+const baseParts = [
+  selection.yukataColor.orderText,
+  selection.pattern.orderText,
+  selection.obi.orderText,
+  selection.footwear.orderText,
+];
 
   if (selection.item.id !== "none") {
     baseParts.push(selection.item.orderText);
@@ -690,7 +727,7 @@ function renderDetails(selection) {
   addDetail("浴衣", selection.yukataColor.label);
   addDetail("柄", `${selection.pattern.label} / ${selection.pattern.category}`);
   addDetail("帯", selection.obi.label);
-  addDetail("履物", "下駄");
+  addDetail("履物", selection.footwear.label);
   addDetail("小物", selection.item.label);
 
   if (selection.type === "women") {
@@ -769,6 +806,11 @@ function renderCard() {
 
 function refreshOptionsForType() {
   const type = getCurrentType();
+  fillSelect(yukataColorSelect, options.yukataColors[type]);
+  fillSelect(patternSelect, options.patterns[type]);
+  fillSelect(obiSelect, options.obi[type]);
+  fillSelect(itemSelect, options.items[type]);
+  fillSelect(footwearSelect, options.footwear[type]);
 
   fillSelect(yukataColorSelect, options.yukataColors[type]);
   fillSelect(patternSelect, options.patterns[type]);
@@ -799,6 +841,7 @@ function init() {
     patternSelect,
     obiSelect,
     itemSelect,
+    footwearSelect,
     arrangeSelect,
   ].forEach((select) => {
     select.addEventListener("change", renderCard);
