@@ -549,32 +549,32 @@ footwear: {
       label: "白レース清楚セット",
       mood: "清楚で涼しげ",
       orderText:
-        "白レース半襟、白レース足袋、淡色の帯揚げ、細めの帯締め、小さめの帯留め、草履",
-      detail: "白レース半襟・白レース足袋・淡色帯揚げ・細め帯締め・小さめ帯留め・草履",
+        "白レース半襟、白レース足袋、淡色の帯揚げ、細めの帯締め、小さめの帯留め",
+      detail: "白レース半襟・白レース足袋・淡色帯揚げ・細め帯締め・小さめ帯留め",
     },
     {
       id: "black-lace",
       label: "黒レースモードセット",
       mood: "モードで大人っぽい",
       orderText:
-        "黒レース半襟、黒レース足袋、濃色の帯揚げ、細めの帯締め、シルバー系の帯留め、草履",
-      detail: "黒レース半襟・黒レース足袋・濃色帯揚げ・細め帯締め・シルバー系帯留め・草履",
+        "黒レース半襟、黒レース足袋、濃色の帯揚げ、細めの帯締め、シルバー系の帯留め",
+      detail: "黒レース半襟・黒レース足袋・濃色帯揚げ・細め帯締め・シルバー系帯留め",
     },
     {
       id: "antique",
       label: "生成りアンティークセット",
       mood: "レトロで物語感のある",
       orderText:
-        "生成りレース半襟、生成り足袋、くすみ色の帯揚げ、丸組風の帯締め、レトロな帯留め、草履",
-      detail: "生成りレース半襟・生成り足袋・くすみ色帯揚げ・丸組風帯締め・レトロな帯留め・草履",
+        "生成りレース半襟、生成り足袋、くすみ色の帯揚げ、丸組風の帯締め、レトロな帯留め",
+      detail: "生成りレース半襟・生成り足袋・くすみ色帯揚げ・丸組風帯締め・レトロな帯留め",
     },
     {
       id: "romantic",
       label: "淡色ロマンティックセット",
       mood: "淡く甘い",
       orderText:
-        "淡いレース半襟、白足袋、薄桃または薄藤の帯揚げ、細い帯締め、花モチーフの帯留め、草履",
-      detail: "淡いレース半襟・白足袋・薄桃または薄藤の帯揚げ・細い帯締め・花モチーフ帯留め・草履",
+        "淡いレース半襟、白足袋、薄桃または薄藤の帯揚げ、細い帯締め、花モチーフの帯留め",
+      detail: "淡いレース半襟・白足袋・薄桃または薄藤の帯揚げ・細い帯締め・花モチーフ帯留め",
     },
   ],
 };
@@ -812,16 +812,12 @@ function renderCard() {
 
 function refreshOptionsForType() {
   const type = getCurrentType();
-  fillSelect(yukataColorSelect, options.yukataColors[type]);
-  fillSelect(patternSelect, options.patterns[type]);
-  fillSelect(obiSelect, options.obi[type]);
-  fillSelect(itemSelect, options.items[type]);
-  fillSelect(footwearSelect, options.footwear[type]);
 
   fillSelect(yukataColorSelect, options.yukataColors[type]);
   fillSelect(patternSelect, options.patterns[type]);
   fillSelect(obiSelect, options.obi[type]);
   fillSelect(itemSelect, options.items[type]);
+  fillSelect(footwearSelect, options.footwear[type]);
 
   if (type === "women") {
     arrangeLabel.hidden = false;
@@ -832,6 +828,9 @@ function refreshOptionsForType() {
     arrangeSelect.disabled = true;
     arrangeSelect.innerHTML = "";
   }
+
+  renderCard();
+}
 
   renderCard();
 }
