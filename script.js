@@ -3,6 +3,7 @@ const yukataColorSelect = document.querySelector("#yukataColor");
 const patternSelect = document.querySelector("#pattern");
 const obiSelect = document.querySelector("#obi");
 const itemSelect = document.querySelector("#item");
+const footwearSelect = document.querySelector("#footwear");
 const arrangeSelect = document.querySelector("#arrange");
 const arrangeLabel = document.querySelector("#arrangeLabel");
 
@@ -507,6 +508,34 @@ men: [
 ],
   },
 
+footwear: {
+  women: [
+    {
+      id: "geta",
+      label: "下駄",
+      orderText: "下駄",
+    },
+  ],
+
+  men: [
+    {
+      id: "yakigeta",
+      label: "焼桐下駄",
+      orderText: "焼桐の下駄",
+    },
+    {
+      id: "black-hanao-geta",
+      label: "黒鼻緒の下駄",
+      orderText: "黒鼻緒の下駄",
+    },
+    {
+      id: "setta",
+      label: "雪駄",
+      orderText: "雪駄",
+    },
+  ],
+},
+  
   arrangeSets: [
     {
       id: "none",
@@ -520,32 +549,32 @@ men: [
       label: "白レース清楚セット",
       mood: "清楚で涼しげ",
       orderText:
-        "白レース半襟、白レース足袋、淡色の帯揚げ、細めの帯締め、小さめの帯留め、草履",
-      detail: "白レース半襟・白レース足袋・淡色帯揚げ・細め帯締め・小さめ帯留め・草履",
+        "白レース半襟、白レース足袋、淡色の帯揚げ、細めの帯締め、小さめの帯留め",
+      detail: "白レース半襟・白レース足袋・淡色帯揚げ・細め帯締め・小さめ帯留め",
     },
     {
       id: "black-lace",
       label: "黒レースモードセット",
       mood: "モードで大人っぽい",
       orderText:
-        "黒レース半襟、黒レース足袋、濃色の帯揚げ、細めの帯締め、シルバー系の帯留め、草履",
-      detail: "黒レース半襟・黒レース足袋・濃色帯揚げ・細め帯締め・シルバー系帯留め・草履",
+        "黒レース半襟、黒レース足袋、濃色の帯揚げ、細めの帯締め、シルバー系の帯留め",
+      detail: "黒レース半襟・黒レース足袋・濃色帯揚げ・細め帯締め・シルバー系帯留め",
     },
     {
       id: "antique",
       label: "生成りアンティークセット",
       mood: "レトロで物語感のある",
       orderText:
-        "生成りレース半襟、生成り足袋、くすみ色の帯揚げ、丸組風の帯締め、レトロな帯留め、草履",
-      detail: "生成りレース半襟・生成り足袋・くすみ色帯揚げ・丸組風帯締め・レトロな帯留め・草履",
+        "生成りレース半襟、生成り足袋、くすみ色の帯揚げ、丸組風の帯締め、レトロな帯留め",
+      detail: "生成りレース半襟・生成り足袋・くすみ色帯揚げ・丸組風帯締め・レトロな帯留め",
     },
     {
       id: "romantic",
       label: "淡色ロマンティックセット",
       mood: "淡く甘い",
       orderText:
-        "淡いレース半襟、白足袋、薄桃または薄藤の帯揚げ、細い帯締め、花モチーフの帯留め、草履",
-      detail: "淡いレース半襟・白足袋・薄桃または薄藤の帯揚げ・細い帯締め・花モチーフ帯留め・草履",
+        "淡いレース半襟、白足袋、薄桃または薄藤の帯揚げ、細い帯締め、花モチーフの帯留め",
+      detail: "淡いレース半襟・白足袋・薄桃または薄藤の帯揚げ・細い帯締め・花モチーフ帯留め",
     },
   ],
 };
@@ -576,9 +605,22 @@ function getCurrentSelection() {
     options.yukataColors[type],
     yukataColorSelect.value,
   );
-  const pattern = findSelected(options.patterns[type], patternSelect.value);
-  const obi = findSelected(options.obi[type], obiSelect.value);
-  const item = findSelected(options.items[type], itemSelect.value);
+  const pattern = findSelected(
+    options.patterns[type],
+    patternSelect.value,
+  );
+  const obi = findSelected(
+    options.obi[type],
+    obiSelect.value,
+  );
+  const item = findSelected(
+    options.items[type],
+    itemSelect.value,
+  );
+  const footwear = findSelected(
+    options.footwear[type],
+    footwearSelect.value,
+  );
   const arrange =
     type === "women"
       ? findSelected(options.arrangeSets, arrangeSelect.value)
@@ -591,6 +633,7 @@ function getCurrentSelection() {
     pattern,
     obi,
     item,
+    footwear,
     arrange,
   };
 }
@@ -626,12 +669,12 @@ if (selection.type === "men") {
 }
 
 function createOrderText(selection) {
-  const baseParts = [
-    selection.yukataColor.orderText,
-    selection.pattern.orderText,
-    selection.obi.orderText,
-    "下駄",
-  ];
+const baseParts = [
+  selection.yukataColor.orderText,
+  selection.pattern.orderText,
+  selection.obi.orderText,
+  selection.footwear.orderText,
+];
 
   if (selection.item.id !== "none") {
     baseParts.push(selection.item.orderText);
@@ -690,7 +733,7 @@ function renderDetails(selection) {
   addDetail("浴衣", selection.yukataColor.label);
   addDetail("柄", `${selection.pattern.label} / ${selection.pattern.category}`);
   addDetail("帯", selection.obi.label);
-  addDetail("履物", "下駄");
+  addDetail("履物", selection.footwear.label);
   addDetail("小物", selection.item.label);
 
   if (selection.type === "women") {
@@ -774,6 +817,7 @@ function refreshOptionsForType() {
   fillSelect(patternSelect, options.patterns[type]);
   fillSelect(obiSelect, options.obi[type]);
   fillSelect(itemSelect, options.items[type]);
+  fillSelect(footwearSelect, options.footwear[type]);
 
   if (type === "women") {
     arrangeLabel.hidden = false;
@@ -799,6 +843,7 @@ function init() {
     patternSelect,
     obiSelect,
     itemSelect,
+    footwearSelect,
     arrangeSelect,
   ].forEach((select) => {
     select.addEventListener("change", renderCard);
