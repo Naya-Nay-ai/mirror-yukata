@@ -600,21 +600,27 @@ function getCurrentType() {
 
 function getCurrentSelection() {
   const type = getCurrentType();
-  const item = findSelected(options.items[type], itemSelect.value);
-  const footwear = findSelected(
-  options.footwear[type],
-  footwearSelect.value,
-);
-  
 
   const yukataColor = findSelected(
     options.yukataColors[type],
     yukataColorSelect.value,
   );
-  const pattern = findSelected(options.patterns[type], patternSelect.value);
-  const obi = findSelected(options.obi[type], obiSelect.value);
-  const item = findSelected(options.items[type], itemSelect.value);
-  const footwear = findSelected(options.footwear[type],footwearSelect.value,);
+  const pattern = findSelected(
+    options.patterns[type],
+    patternSelect.value,
+  );
+  const obi = findSelected(
+    options.obi[type],
+    obiSelect.value,
+  );
+  const item = findSelected(
+    options.items[type],
+    itemSelect.value,
+  );
+  const footwear = findSelected(
+    options.footwear[type],
+    footwearSelect.value,
+  );
   const arrange =
     type === "women"
       ? findSelected(options.arrangeSets, arrangeSelect.value)
