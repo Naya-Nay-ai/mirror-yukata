@@ -796,7 +796,13 @@ if (
     selection.obi.swatch,
   );
 
+if (patternAsset) {
   yukataPatternPreview.src = patternAsset;
+  yukataPatternPreview.hidden = false;
+} else {
+  yukataPatternPreview.removeAttribute("src");
+  yukataPatternPreview.hidden = true;
+}
   yukataBodyPreview.src = assets.body;
   yukataObiPreview.src = assets.obi;
   previewCaption.textContent = assets.caption;
