@@ -59,7 +59,11 @@ men: {
 };
 
 const itemPreviewAssets = {
-  women: {},
+  women: {
+kinchaku: "assets/svg/item/women-item-kinchaku.png",
+kago: "assets/svg/item/women-item-kago.png",
+"wasou-bag": "assets/svg/item/women-item-wasou-bag.png",
+},
   men: {
     shingen: "assets/svg/item/men-item-shingen.png",
     sensu: "assets/svg/item/men-item-sensu.png",
