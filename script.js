@@ -19,6 +19,9 @@ const yukataPatternPreview = document.querySelector("#yukataPatternPreview");
 const yukataBodyFillPreview = document.querySelector("#yukataBodyFillPreview");
 const yukataObiFillPreview = document.querySelector("#yukataObiFillPreview");
 const yukataItemPreview = document.querySelector("#yukataItemPreview");
+const yukataFootwearPreview = document.querySelector(
+  "#yukataFootwearPreview",
+);
 
 const previewAssets = {
   women: {
@@ -61,6 +64,17 @@ const itemPreviewAssets = {
     shingen: "assets/svg/item/men-item-shingen.png",
     sensu: "assets/svg/item/men-item-sensu.png",
     uchiwa: "assets/svg/item/men-item-uchiwa.png",
+  },
+};
+const footwearPreviewAssets = {
+  women: {},
+  men: {
+    yakigeta:
+      "assets/svg/footwear/men-footwear-yakigeta.png",
+    "black-hanao-geta":
+      "assets/svg/footwear/men-footwear-black-hanao-geta.png",
+    setta:
+      "assets/svg/footwear/men-footwear-setta.png",
   },
 };
 
@@ -761,6 +775,7 @@ if (
   !yukataObiFillPreview ||
   !yukataPatternPreview ||
   !yukataItemPreview ||
+  !yukataFootwearPreview ||
   !previewCaption
 ) {
   return;
@@ -796,6 +811,20 @@ if (
     yukataItemPreview.removeAttribute("src");
     yukataItemPreview.hidden = true;
   }
+const footwearAsset =
+  footwearPreviewAssets[selection.type]?.[
+    selection.footwear.id
+  ] ?? "";
+
+if (footwearAsset) {
+  yukataFootwearPreview.src = footwearAsset;
+  yukataFootwearPreview.hidden = false;
+} else {
+  yukataFootwearPreview.removeAttribute("src");
+  yukataFootwearPreview.hidden = true;
+}
+
+
   
 }
 function renderCard() {
