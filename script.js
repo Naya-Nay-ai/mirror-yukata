@@ -71,7 +71,11 @@ kago: "assets/svg/item/women-item-kago.png",
   },
 };
 const footwearPreviewAssets = {
-  women: {},
+   women: {
+  "shiroki-geta": "assets/svg/footwear/women-footwear-shiroki-geta.png",
+  "black-geta": "assets/svg/footwear/women-footwear-black-geta.png",
+  zori: "assets/svg/footwear/women-footwear-zori.png",
+  },
   men: {
     yakigeta:
       "assets/svg/footwear/men-footwear-yakigeta.png",
