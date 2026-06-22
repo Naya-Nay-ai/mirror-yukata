@@ -71,7 +71,11 @@ kago: "assets/svg/item/women-item-kago.png",
   },
 };
 const footwearPreviewAssets = {
-  women: {},
+   women: {
+  "shiroki-geta": "assets/svg/footwear/women-footwear-shiroki-geta.png",
+  "black-geta": "assets/svg/footwear/women-footwear-black-geta.png",
+  zori: "assets/svg/footwear/women-footwear-zori.png",
+  },
   men: {
     yakigeta:
       "assets/svg/footwear/men-footwear-yakigeta.png",
@@ -527,13 +531,23 @@ men: [
   },
 
 footwear: {
-  women: [
+ women: [
     {
-      id: "geta",
-      label: "下駄",
-      orderText: "下駄",
+      id: "shiroki-geta",
+      label: "白木下駄",
+      orderText: "白木の下駄",
     },
-  ],
+    {
+      id: "black-geta",
+      label: "黒塗り下駄",
+      orderText: "黒塗りの下駄",
+    },
+    {
+      id: "zori",
+      label: "草履",
+      orderText: "草履",
+    },
+],
 
   men: [
     {
