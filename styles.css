@@ -389,8 +389,10 @@ h2 {
   text-align: center;
 }
 #yukataArrangePreview {
+
   z-index: 5;
 }
+
 #yukataItemPreview {
   z-index: 6;
 }
