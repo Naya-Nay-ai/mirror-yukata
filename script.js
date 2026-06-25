@@ -835,6 +835,19 @@ if (patternAsset) {
   yukataObiPreview.src = assets.obi;
   previewCaption.textContent = assets.caption;
 
+const arrangeAsset =
+  selection.type === "women"
+    ? arrangePreviewAssets.women[selection.arrange?.id] ?? ""
+    : "";
+
+if (arrangeAsset) {
+  yukataArrangePreview.src = arrangeAsset;
+  yukataArrangePreview.hidden = false;
+} else {
+  yukataArrangePreview.removeAttribute("src");
+  yukataArrangePreview.hidden = true;
+}
+  
   const itemAsset =
     itemPreviewAssets[selection.type]?.[selection.item.id] ?? "";
 
