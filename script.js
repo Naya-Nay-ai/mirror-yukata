@@ -84,6 +84,16 @@ const footwearPreviewAssets = {
       "assets/svg/footwear/men-footwear-setta.png",
   },
 };
+const arrangePreviewAssets = {
+  women: {
+    none: "",
+    "white-lace": "assets/svg/arrange/women-arrange-white-lace.png",
+    "black-lace": "",
+    antique: "",
+    romantic: "",
+  },
+};
+
 
 const options = {
   styleTypes: [
