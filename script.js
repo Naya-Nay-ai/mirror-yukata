@@ -801,6 +801,7 @@ if (
   !yukataBodyFillPreview ||
   !yukataObiFillPreview ||
   !yukataPatternPreview ||
+  !yukataArrangePreview ||
   !yukataItemPreview ||
   !yukataFootwearPreview ||
   !previewCaption
