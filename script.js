@@ -19,9 +19,8 @@ const yukataPatternPreview = document.querySelector("#yukataPatternPreview");
 const yukataBodyFillPreview = document.querySelector("#yukataBodyFillPreview");
 const yukataObiFillPreview = document.querySelector("#yukataObiFillPreview");
 const yukataItemPreview = document.querySelector("#yukataItemPreview");
-const yukataFootwearPreview = document.querySelector(
-  "#yukataFootwearPreview",
-);
+const yukataFootwearPreview = document.querySelector("#yukataFootwearPreview",);
+const yukataArrangePreview = document.querySelector("#yukataArrangePreview",);
 
 const previewAssets = {
   women: {
