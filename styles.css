@@ -389,11 +389,13 @@ h2 {
   text-align: center;
 }
 #yukataArrangePreview {
+
   z-index: 5;
 }
+
 #yukataItemPreview {
-  z-index: 5;
+  z-index: 6;
 }
 #yukataFootwearPreview {
-  z-index: 6;
+  z-index: 7;
 }

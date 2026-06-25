@@ -19,9 +19,8 @@ const yukataPatternPreview = document.querySelector("#yukataPatternPreview");
 const yukataBodyFillPreview = document.querySelector("#yukataBodyFillPreview");
 const yukataObiFillPreview = document.querySelector("#yukataObiFillPreview");
 const yukataItemPreview = document.querySelector("#yukataItemPreview");
-const yukataFootwearPreview = document.querySelector(
-  "#yukataFootwearPreview",
-);
+const yukataFootwearPreview = document.querySelector("#yukataFootwearPreview",);
+const yukataArrangePreview = document.querySelector("#yukataArrangePreview",);
 
 const previewAssets = {
   women: {
@@ -85,6 +84,16 @@ const footwearPreviewAssets = {
       "assets/svg/footwear/men-footwear-setta.png",
   },
 };
+const arrangePreviewAssets = {
+  women: {
+    none: "",
+    "white-lace": "assets/svg/arrange/women-arrange-white-lace.png",
+    "black-lace": "",
+    antique: "",
+    romantic: "",
+  },
+};
+
 
 const options = {
   styleTypes: [
@@ -792,6 +801,7 @@ if (
   !yukataBodyFillPreview ||
   !yukataObiFillPreview ||
   !yukataPatternPreview ||
+  !yukataArrangePreview ||
   !yukataItemPreview ||
   !yukataFootwearPreview ||
   !previewCaption
@@ -825,6 +835,19 @@ if (patternAsset) {
   yukataObiPreview.src = assets.obi;
   previewCaption.textContent = assets.caption;
 
+const arrangeAsset =
+  selection.type === "women"
+    ? arrangePreviewAssets.women[selection.arrange?.id] ?? ""
+    : "";
+
+if (arrangeAsset) {
+  yukataArrangePreview.src = arrangeAsset;
+  yukataArrangePreview.hidden = false;
+} else {
+  yukataArrangePreview.removeAttribute("src");
+  yukataArrangePreview.hidden = true;
+}
+  
   const itemAsset =
     itemPreviewAssets[selection.type]?.[selection.item.id] ?? "";
 
