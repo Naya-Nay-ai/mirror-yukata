@@ -88,9 +88,9 @@ const arrangePreviewAssets = {
   women: {
     none: "",
     "white-lace": "assets/svg/arrange/women-arrange-white-lace.png",
-    "black-lace": "",
-    antique: "",
-    romantic: "",
+    "black-lace": "assets/svg/arrange/women-arrange-black-lace.png",
+    antique: "assets/svg/arrange/women-arrange-antique.png",
+    romantic: "assets/svg/arrange/women-arrange-romantic.png",
   },
 };
 
