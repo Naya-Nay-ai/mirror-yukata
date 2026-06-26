@@ -40,7 +40,7 @@ const previewAssets = {
 };
 const patternPreviewAssets = {
   women: {
-    asagao: "assets/svg/patterns/women-asagao.svg",
+    asagao: "assets/svg/patterns/women-asagao.png",
     kingyo: "assets/svg/patterns/women-kingyo.png",
     hanabi: "assets/svg/patterns/women-hanabi.png",
     tsubaki: "assets/svg/patterns/women-tsubaki.png",
@@ -48,12 +48,12 @@ const patternPreviewAssets = {
     kurage: "assets/svg/patterns/women-kurage.png",
     "moon-gradient": "assets/svg/patterns/women-tsukiyo.png",
   },
-men: {
-  stripe: "assets/svg/patterns/men-stripe.svg",
-  ichimatsu: "assets/svg/patterns/men-ichimatsu.png",
-  ryusui: "assets/svg/patterns/men-ryusui.png",
-  tonbo: "assets/svg/patterns/men-tonbo.png",
-  geometric: "assets/svg/patterns/men-geometric.png",
+  men: {
+    stripe: "assets/svg/patterns/men-stripe.png",
+    ichimatsu: "assets/svg/patterns/men-ichimatsu.png",
+    ryusui: "assets/svg/patterns/men-ryusui.png",
+    tonbo: "assets/svg/patterns/men-tonbo.png",
+    geometric: "assets/svg/patterns/men-geometric.png",
   },
 };
 
