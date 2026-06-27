@@ -371,28 +371,22 @@ const options = {
   obi: {
 women: [
   {
-    id: "red",
-    label: "朱赤",
-    swatch: "#c8544b",
-    orderText: "朱赤の帯",
+    id: "white",
+    label: "白",
+    swatch: "#ffffff",
+    orderText: "白い帯",
   },
   {
-  id: "benihi",
-  label: "紅緋",
-  swatch: "#e83929",
-  orderText: "紅緋の帯",
-},
-{
-  id: "tsutsuji",
-  label: "躑躅色",
-  swatch: "#e95295",
-  orderText: "躑躅色の帯",
-},
+    id: "kinari",
+    label: "生成り",
+    swatch: "#f3ead8",
+    orderText: "生成りの帯",
+  },
   {
-    id: "usumomo",
-    label: "薄桃",
-    swatch: "#e7b3bf",
-    orderText: "淡い薄桃色の帯",
+    id: "nanohana",
+    label: "菜の花色",
+    swatch: "#ffec47",
+    orderText: "菜の花色の帯",
   },
   {
     id: "yamabuki",
@@ -407,10 +401,28 @@ women: [
     orderText: "くすみ金の帯",
   },
   {
-  id: "nanohana",
-  label: "菜の花色",
-  swatch: "#ffec47",
-  orderText: "菜の花色の帯",
+    id: "red",
+    label: "朱赤",
+    swatch: "#c8544b",
+    orderText: "朱赤の帯",
+  },
+  {
+    id: "benihi",
+    label: "紅緋",
+    swatch: "#e83929",
+    orderText: "紅緋の帯",
+  },
+  {
+    id: "usumomo",
+    label: "薄桃",
+    swatch: "#e7b3bf",
+    orderText: "淡い薄桃色の帯",
+  },
+  {
+    id: "tsutsuji",
+    label: "躑躅色",
+    swatch: "#e95295",
+    orderText: "躑躅色の帯",
   },
   {
     id: "budou",
@@ -429,18 +441,6 @@ women: [
     label: "青緑",
     swatch: "#2f9b91",
     orderText: "鮮やかな青緑色の帯",
-  },
-  {
-    id: "white",
-    label: "白",
-    swatch: "#ffffff",
-    orderText: "白い帯",
-  },
-  {
-    id: "kinari",
-    label: "生成り",
-    swatch: "#f3ead8",
-    orderText: "生成りの帯",
   },
   {
     id: "black",
