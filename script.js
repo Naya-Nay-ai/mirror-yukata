@@ -320,7 +320,7 @@ const options = {
        category: "ポップ",
        namePart: "猫",
        mood: "遊び心のある",
-       orderText: "猫柄",
+       orderText: "猫とまたたびの花柄",
 },
 {
   id: "geometric-pop",
