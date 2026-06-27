@@ -314,6 +314,30 @@ const options = {
         mood: "幻想的な",
         orderText: "月夜を思わせるグラデーション柄",
       },
+       {
+        id: "neko",
+       label: "猫",
+       category: "ポップ",
+       namePart: "猫",
+       mood: "遊び心のある",
+       orderText: "猫柄",
+},
+{
+  id: "geometric-pop",
+  label: "幾何ポップ",
+  category: "モダン",
+  namePart: "幾何",
+  mood: "軽やかでモダンな",
+  orderText: "幾何ポップ柄",
+},
+{
+  id: "star-pop",
+  label: "星あそび",
+  category: "ポップ",
+  namePart: "星",
+  mood: "きらめく",
+  orderText: "星あそび柄",
+},
     ],
 
     men: [
@@ -365,32 +389,8 @@ const options = {
         mood: "モダンな",
         orderText: "幾何学柄",
       },
-      {
-  id: "neko",
-  label: "猫",
-  category: "ポップ",
-  namePart: "猫",
-  mood: "遊び心のある",
-  orderText: "猫柄",
-},
-{
-  id: "geometric-pop",
-  label: "幾何ポップ",
-  category: "モダン",
-  namePart: "幾何",
-  mood: "軽やかでモダンな",
-  orderText: "幾何ポップ柄",
-},
-{
-  id: "star-pop",
-  label: "星あそび",
-  category: "ポップ",
-  namePart: "星",
-  mood: "きらめく",
-  orderText: "星あそび柄",
-},
-    ],
-  },
+      ],
+      },
 
   obi: {
 women: [
