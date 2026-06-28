@@ -49,6 +49,7 @@ const patternPreviewAssets = {
     "moon-gradient": "assets/svg/patterns/women-tsukiyo.png",
     neko: "assets/svg/patterns/women-neko.png",
     "geometric-pop": "assets/svg/patterns/women-geometric-pop.png",
+    "star-pop": "assets/svg/patterns/women-star-pop.png"
   },
   men: {
     stripe: "assets/svg/patterns/men-stripe.png",
