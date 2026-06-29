@@ -52,9 +52,6 @@ const patternPreviewAssets = {
     "geometric-pop": "assets/svg/patterns/women-geometric-pop.png",
     "star-pop": "assets/svg/patterns/women-star-pop.png",
   },
-  const obiTexturePreviewAssets = {
-  women: "assets/svg/patterns/women-obi-texture.png",
-  };
   
   men: {
     stripe: "assets/svg/patterns/men-stripe.png",
@@ -64,6 +61,10 @@ const patternPreviewAssets = {
     geometric: "assets/svg/patterns/men-geometric.png",
   },
 };
+
+ const obiTexturePreviewAssets = {
+ women: "assets/svg/patterns/women-obi-texture.png",
+ };
 
 const itemPreviewAssets = {
   women: {
