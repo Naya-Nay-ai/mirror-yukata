@@ -845,6 +845,7 @@ if (
   !yukataObiPreview ||
   !yukataBodyFillPreview ||
   !yukataObiFillPreview ||
+  !yukataObiTexturePreview ||
   !yukataPatternPreview ||
   !yukataArrangePreview ||
   !yukataItemPreview ||
@@ -868,6 +869,19 @@ if (
     assets.obiFill,
     selection.obi.swatch,
   );
+
+  const obiTextureAsset =
+  selection.type === "women"
+    ? obiTexturePreviewAssets.women
+    : "";
+
+if (obiTextureAsset) {
+  yukataObiTexturePreview.src = obiTextureAsset;
+  yukataObiTexturePreview.hidden = false;
+} else {
+  yukataObiTexturePreview.removeAttribute("src");
+  yukataObiTexturePreview.hidden = true;
+}
 
 if (patternAsset) {
   yukataPatternPreview.src = patternAsset;
