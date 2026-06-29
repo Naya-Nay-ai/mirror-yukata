@@ -376,13 +376,17 @@ h2 {
   z-index: 2;
 }
 
-#yukataObiPreview {
+#yukataObiFillPreview {
   z-index: 3;
+  mix-blend-mode: multiply;
 }
 
-#yukataObiFillPreview {
+#yukataObiTexturePreview {
   z-index: 4;
-  mix-blend-mode: multiply;
+}
+
+.yukata-obi-texture-layer {
+  opacity: 0.32;
 }
 
 .preview-caption {
@@ -392,14 +396,19 @@ h2 {
   font-weight: 700;
   text-align: center;
 }
-#yukataArrangePreview {
 
+#yukataObiPreview {
   z-index: 5;
 }
 
-#yukataItemPreview {
+#yukataArrangePreview {
+
   z-index: 6;
 }
-#yukataFootwearPreview {
+
+#yukataItemPreview {
   z-index: 7;
+}
+#yukataFootwearPreview {
+  z-index: 8;
 }
