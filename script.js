@@ -21,6 +21,7 @@ const yukataObiFillPreview = document.querySelector("#yukataObiFillPreview");
 const yukataItemPreview = document.querySelector("#yukataItemPreview");
 const yukataFootwearPreview = document.querySelector("#yukataFootwearPreview",);
 const yukataArrangePreview = document.querySelector("#yukataArrangePreview",);
+const yukataObiTexturePreview = document.querySelector("#yukataObiTexturePreview");
 
 const previewAssets = {
   women: {
@@ -51,6 +52,10 @@ const patternPreviewAssets = {
     "geometric-pop": "assets/svg/patterns/women-geometric-pop.png",
     "star-pop": "assets/svg/patterns/women-star-pop.png",
   },
+  const obiTexturePreviewAssets = {
+  women: "assets/svg/patterns/women-obi-texture.png",
+  };
+  
   men: {
     stripe: "assets/svg/patterns/men-stripe.png",
     ichimatsu: "assets/svg/patterns/men-ichimatsu.png",
