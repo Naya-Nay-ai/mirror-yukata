@@ -49,7 +49,7 @@ const patternPreviewAssets = {
     "moon-gradient": "assets/svg/patterns/women-tsukiyo.png",
     neko: "assets/svg/patterns/women-neko.png",
     "geometric-pop": "assets/svg/patterns/women-geometric-pop.png",
-    "star-pop": "assets/svg/patterns/women-star-pop.png"
+    "star-pop": "assets/svg/patterns/women-star-pop.png",
   },
   men: {
     stripe: "assets/svg/patterns/men-stripe.png",
@@ -630,38 +630,38 @@ footwear: {
       orderText: "キモノアレンジなし",
       detail: "浴衣らしくシンプルに着る",
     },
-    {
-      id: "white-lace",
-      label: "白レース清楚セット",
-      mood: "清楚で涼しげ",
-      orderText:
-        "白レース半襟、白レース足袋、淡色の帯揚げ、細めの帯締め、小さめの帯留め",
-      detail: "白レース半襟・白レース足袋・淡色帯揚げ・細め帯締め・小さめ帯留め",
-    },
-    {
-      id: "black-lace",
-      label: "黒レースモードセット",
-      mood: "モードで大人っぽい",
-      orderText:
-        "黒レース半襟、黒レース足袋、濃色の帯揚げ、細めの帯締め、シルバー系の帯留め",
-      detail: "黒レース半襟・黒レース足袋・濃色帯揚げ・細め帯締め・シルバー系帯留め",
-    },
-    {
-      id: "antique",
-      label: "生成りアンティークセット",
-      mood: "レトロで物語感のある",
-      orderText:
-        "生成りレース半襟、生成り足袋、くすみ色の帯揚げ、丸組風の帯締め、レトロな帯留め",
-      detail: "生成りレース半襟・生成り足袋・くすみ色帯揚げ・丸組風帯締め・レトロな帯留め",
-    },
-    {
-      id: "romantic",
-      label: "淡色ロマンティックセット",
-      mood: "淡く甘い",
-      orderText:
-        "淡いレース半襟、白足袋、薄桃または薄藤の帯揚げ、細い帯締め、花モチーフの帯留め",
-      detail: "淡いレース半襟・白足袋・薄桃または薄藤の帯揚げ・細い帯締め・花モチーフ帯留め",
-    },
+{
+  id: "white-lace",
+  label: "白レース清楚セット",
+  mood: "清楚で涼しげ",
+  orderText:
+    "白レース半襟、白レース足袋、淡色の帯まわりアレンジ",
+  detail: "白レース半襟・白レース足袋・淡色の帯まわりアレンジ",
+},
+{
+  id: "black-lace",
+  label: "黒レースモードセット",
+  mood: "モードで大人っぽい",
+  orderText:
+    "黒レース半襟、黒レース足袋、濃色の帯まわりアレンジ",
+  detail: "黒レース半襟・黒レース足袋・濃色の帯まわりアレンジ",
+},
+{
+  id: "antique",
+  label: "生成りアンティークセット",
+  mood: "レトロで物語感のある",
+  orderText:
+    "生成りレース半襟、生成り足袋、くすみ色の帯まわりアレンジ",
+  detail: "生成りレース半襟・生成り足袋・くすみ色の帯まわりアレンジ",
+},
+{
+  id: "romantic",
+  label: "淡色ロマンティックセット",
+  mood: "淡く甘い",
+  orderText:
+    "淡いレース半襟、白足袋、淡色の帯まわりアレンジ",
+  detail: "淡いレース半襟・白足袋・淡色の帯まわりアレンジ",
+},
   ],
 };
 
