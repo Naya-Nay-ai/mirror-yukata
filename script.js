@@ -45,15 +45,18 @@ const previewAssets = {
 const patternPreviewAssets = {
   women: {
     asagao: "assets/svg/patterns/women-asagao.png",
+    ajisai: "assets/svg/patterns/women-ajisai.png",
     kingyo: "assets/svg/patterns/women-kingyo.png",
     hanabi: "assets/svg/patterns/women-hanabi.png",
     tsubaki: "assets/svg/patterns/women-tsubaki.png",
     ryusui: "assets/svg/patterns/women-ryusui.png",
     kurage: "assets/svg/patterns/women-kurage.png",
     "moon-gradient": "assets/svg/patterns/women-tsukiyo.png",
+    "dot-pop": "assets/svg/patterns/women-dot.png",
     neko: "assets/svg/patterns/women-neko.png",
     "geometric-pop": "assets/svg/patterns/women-geometric-pop.png",
     "star-pop": "assets/svg/patterns/women-star-pop.png",
+    
   },
   
   men: {
@@ -279,6 +282,14 @@ const options = {
         orderText: "朝顔柄",
       },
       {
+      id: "ajisai",
+      label: "あじさい",
+      category: "季節",
+      namePart: "あじさい",
+      mood: "やさしく涼やかな",
+      orderText: "あじさい柄",
+      },
+      {
         id: "kingyo",
         label: "金魚",
         category: "王道",
@@ -333,23 +344,31 @@ const options = {
        namePart: "猫",
        mood: "遊び心のある",
        orderText: "猫とまたたびの花柄",
-},
-{
-  id: "geometric-pop",
-  label: "幾何ポップ",
-  category: "モダン",
-  namePart: "幾何",
-  mood: "軽やかでモダンな",
-  orderText: "幾何ポップ柄",
-},
-{
-  id: "star-pop",
-  label: "星あそび",
-  category: "ポップ",
-  namePart: "星",
-  mood: "きらめく",
-  orderText: "星あそび柄",
-},
+       },
+       {
+       id: "geometric-pop",
+       label: "幾何ポップ",
+       category: "モダン",
+       namePart: "幾何",
+       mood: "軽やかでモダンな",
+       orderText: "幾何ポップ柄",
+       },
+      {
+       id: "dot-pop"
+       label: "ドット",
+       category: "ポップ",
+       namePart: "ドット",
+       mood: "軽やかな",
+       orderText: "ドット柄",
+       },
+       {
+       id: "star-pop",
+       label: "星あそび",
+       category: "ポップ",
+       namePart: "星",
+       mood: "きらめく",
+       orderText: "星あそび柄",
+       },
     ],
 
     men: [
