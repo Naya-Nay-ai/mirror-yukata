@@ -409,3 +409,38 @@ h2 {
 #yukataFootwearPreview {
   z-index: 8;
 }
+
+.order-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.action-button {
+  min-height: 42px;
+  padding: 10px 16px;
+  border: 1px solid rgba(37, 59, 115, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  color: var(--navy);
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.action-button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(37, 59, 115, 0.38);
+  box-shadow: 0 8px 18px rgba(37, 48, 71, 0.1);
+}
+
+.copy-status {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
