@@ -507,6 +507,12 @@ women: [
 
 men: [
   {
+    id: "brown",
+    label: "焦茶",
+    swatch: "#5b3b2f",
+    orderText: "焦茶の帯",
+  },  
+  {
     id: "enji",
     label: "臙脂",
     swatch: "#793743",
@@ -517,12 +523,6 @@ men: [
     label: "山吹",
     swatch: "#c99a32",
     orderText: "落ち着いた山吹色の帯",
-  },
-  {
-    id: "brown",
-    label: "焦茶",
-    swatch: "#5b3b2f",
-    orderText: "焦茶の帯",
   },
   {
     id: "navy",
