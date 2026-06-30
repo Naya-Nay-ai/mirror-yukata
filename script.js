@@ -353,14 +353,14 @@ const options = {
        mood: "軽やかでモダンな",
        orderText: "幾何ポップ柄",
        },
-      {
-       id: "dot-pop"
-       label: "ドット",
-       category: "ポップ",
-       namePart: "ドット",
-       mood: "軽やかな",
-       orderText: "ドット柄",
-       },
+{
+  id: "dot-pop",
+  label: "ドット",
+  category: "ポップ",
+  namePart: "ドット",
+  mood: "軽やかな",
+  orderText: "ドット柄",
+},
        {
        id: "star-pop",
        label: "星あそび",
