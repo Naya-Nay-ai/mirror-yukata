@@ -376,16 +376,17 @@ h2 {
   z-index: 2;
 }
 
-#yukataObiFillPreview {
+#yukataObiPreview {
   z-index: 3;
+}
+
+#yukataObiFillPreview {
+  z-index: 4;
   mix-blend-mode: multiply;
 }
 
 #yukataObiTexturePreview {
-  z-index: 4;
-}
-
-.yukata-obi-texture-layer {
+  z-index: 5;
   opacity: 0.32;
 }
 
@@ -395,10 +396,6 @@ h2 {
   font-size: 0.86rem;
   font-weight: 700;
   text-align: center;
-}
-
-#yukataObiPreview {
-  z-index: 5;
 }
 
 #yukataArrangePreview {
