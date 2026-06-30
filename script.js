@@ -279,6 +279,14 @@ const options = {
         orderText: "朝顔柄",
       },
       {
+      id: "ajisai",
+      label: "あじさい",
+      category: "季節",
+      namePart: "あじさい",
+      mood: "やさしく涼やかな",
+      orderText: "あじさい柄",
+      },
+      {
         id: "kingyo",
         label: "金魚",
         category: "王道",
