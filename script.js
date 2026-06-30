@@ -52,7 +52,7 @@ const patternPreviewAssets = {
     ryusui: "assets/svg/patterns/women-ryusui.png",
     kurage: "assets/svg/patterns/women-kurage.png",
     "moon-gradient": "assets/svg/patterns/women-tsukiyo.png",
-    dot: "assets/svg/patterns/women-dot.png",
+    "dot-pop": "assets/svg/patterns/women-dot.png",
     neko: "assets/svg/patterns/women-neko.png",
     "geometric-pop": "assets/svg/patterns/women-geometric-pop.png",
     "star-pop": "assets/svg/patterns/women-star-pop.png",
@@ -354,7 +354,7 @@ const options = {
        orderText: "幾何ポップ柄",
        },
       {
-       id: "dot-pop",
+       id: "dot-pop"
        label: "ドット",
        category: "ポップ",
        namePart: "ドット",
