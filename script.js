@@ -45,15 +45,18 @@ const previewAssets = {
 const patternPreviewAssets = {
   women: {
     asagao: "assets/svg/patterns/women-asagao.png",
+    ajisai: "assets/svg/patterns/women-ajisai.png",
     kingyo: "assets/svg/patterns/women-kingyo.png",
     hanabi: "assets/svg/patterns/women-hanabi.png",
     tsubaki: "assets/svg/patterns/women-tsubaki.png",
     ryusui: "assets/svg/patterns/women-ryusui.png",
     kurage: "assets/svg/patterns/women-kurage.png",
     "moon-gradient": "assets/svg/patterns/women-tsukiyo.png",
+    dot: "assets/svg/patterns/women-dot.png",
     neko: "assets/svg/patterns/women-neko.png",
     "geometric-pop": "assets/svg/patterns/women-geometric-pop.png",
     "star-pop": "assets/svg/patterns/women-star-pop.png",
+    
   },
   
   men: {
