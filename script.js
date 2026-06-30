@@ -23,6 +23,9 @@ const yukataFootwearPreview = document.querySelector("#yukataFootwearPreview",);
 const yukataArrangePreview = document.querySelector("#yukataArrangePreview",);
 const yukataObiTexturePreview = document.querySelector("#yukataObiTexturePreview");
 
+const copyOrderTextButton = document.querySelector("#copyOrderTextButton");
+const copyOrderTextStatus = document.querySelector("#copyOrderTextStatus");
+
 const previewAssets = {
   women: {
     body: "assets/svg/women-yukata-basic.svg",
@@ -973,6 +976,55 @@ function refreshOptionsForType() {
   renderCard();
 }
 
+function setCopyStatus(message) {
+  if (!copyOrderTextStatus) return;
+
+  copyOrderTextStatus.textContent = message;
+
+  if (message) {
+    window.setTimeout(() => {
+      copyOrderTextStatus.textContent = "";
+    }, 1800);
+  }
+}
+
+function fallbackCopyText(text) {
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.top = "-9999px";
+
+  document.body.append(textarea);
+  textarea.select();
+
+  const success = document.execCommand("copy");
+  textarea.remove();
+
+  return success;
+}
+
+async function copyOrderText() {
+  const text = orderText.textContent.trim();
+
+  if (!text) {
+    setCopyStatus("コピーする文がありません");
+    return;
+  }
+
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+    } else if (!fallbackCopyText(text)) {
+      throw new Error("copy failed");
+    }
+
+    setCopyStatus("コピーしました");
+  } catch (error) {
+    setCopyStatus("コピーに失敗しました");
+  }
+}
+
 function init() {
   fillSelect(styleTypeSelect, options.styleTypes);
   fillSelect(arrangeSelect, options.arrangeSets);
@@ -990,6 +1042,10 @@ function init() {
     select.addEventListener("change", renderCard);
   });
 
+if (copyOrderTextButton) {
+  copyOrderTextButton.addEventListener("click", copyOrderText);
+}
+  
   refreshOptionsForType();
 }
 
