@@ -693,6 +693,24 @@ footwear: {
   ],
 };
 
+const defaultSelectionIds = {
+  women: {
+    yukataColor: "asagi",
+    pattern: "ajisai",
+    obi: "kinari",
+    item: "kinchaku",
+    footwear: "shiroki-geta",
+    arrange: "none",
+  },
+  men: {
+    yukataColor: "kon",
+    pattern: "stripe",
+    obi: "brown",
+    item: "none",
+    footwear: "yakigeta",
+  },
+};
+
 function fillSelect(select, values) {
   select.innerHTML = "";
 
@@ -992,6 +1010,20 @@ function refreshOptionsForType() {
     arrangeSelect.innerHTML = "";
   }
 
+const defaults = defaultSelectionIds[type];
+
+if (defaults) {
+  yukataColorSelect.value = defaults.yukataColor;
+  patternSelect.value = defaults.pattern;
+  obiSelect.value = defaults.obi;
+  itemSelect.value = defaults.item;
+  footwearSelect.value = defaults.footwear;
+
+  if (type === "women") {
+    arrangeSelect.value = defaults.arrange;
+  }
+}
+  
   renderCard();
 }
 
