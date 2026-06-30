@@ -444,3 +444,57 @@ h2 {
   font-size: 0.86rem;
   font-weight: 700;
 }
+.controls {
+  position: relative;
+  overflow: hidden;
+  gap: 18px;
+  padding: 26px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 250, 241, 0.84)),
+    radial-gradient(circle at 12% 8%, rgba(201, 162, 93, 0.14), transparent 9rem),
+    radial-gradient(circle at 92% 12%, rgba(141, 124, 195, 0.14), transparent 10rem);
+}
+
+.controls::before {
+  content: "✦";
+  position: absolute;
+  right: 22px;
+  top: 18px;
+  color: rgba(201, 162, 93, 0.46);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.controls-header {
+  position: relative;
+  padding: 0 0 14px;
+  border-bottom: 1px dashed rgba(37, 48, 71, 0.14);
+}
+
+.section-kicker {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.section-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.controls label {
+  position: relative;
+  padding: 12px;
+  border: 1px solid rgba(37, 48, 71, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.56);
+}
+
+.controls label:focus-within {
+  border-color: rgba(141, 124, 195, 0.34);
+  box-shadow: 0 10px 24px rgba(37, 48, 71, 0.08);
+}
