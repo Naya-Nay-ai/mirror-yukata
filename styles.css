@@ -528,3 +528,7 @@ h2 {
 .chips {
   margin: 18px 0;
 }
+.hero h1 {
+  font-size: clamp(2.1rem, 5.6vw, 4.1rem);
+  letter-spacing: 0.06em;
+}
