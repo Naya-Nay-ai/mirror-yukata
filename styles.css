@@ -509,3 +509,22 @@ h2 {
 .hero {
   padding: clamp(30px, 5vw, 40px);
 }
+
+.yukata-preview-wrapper {
+  width: min(310px, 78vw);
+}
+
+#coordName {
+  font-size: clamp(1.35rem, 3.2vw, 2.15rem);
+  line-height: 1.28;
+}
+
+#coordDescription {
+  margin-top: 12px;
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+.chips {
+  margin: 18px 0;
+}
