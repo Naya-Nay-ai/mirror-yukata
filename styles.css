@@ -542,3 +542,13 @@ body {
   background-size: auto, 80px 48px, 80px 48px, 80px 48px, 80px 48px;
   background-color: #faf7f0;
 }
+body {
+  background:
+    linear-gradient(rgba(250, 247, 240, 0.82), rgba(250, 247, 240, 0.82)),
+    radial-gradient(circle at 20px 20px, rgba(116, 145, 176, 0.16) 2px, transparent 2.5px),
+    radial-gradient(circle at 20px 20px, transparent 18px, rgba(116, 145, 176, 0.13) 18.5px, transparent 19px),
+    radial-gradient(circle at 60px 20px, transparent 18px, rgba(116, 145, 176, 0.13) 18.5px, transparent 19px),
+    radial-gradient(circle at 40px 54px, transparent 18px, rgba(116, 145, 176, 0.13) 18.5px, transparent 19px);
+  background-size: auto, 80px 48px, 80px 48px, 80px 48px, 80px 48px;
+  background-color: #faf7f0;
+}
