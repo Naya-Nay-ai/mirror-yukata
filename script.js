@@ -77,7 +77,11 @@ const itemPreviewAssets = {
 kinchaku: "assets/svg/item/women-item-kinchaku.png",
 kago: "assets/svg/item/women-item-kago.png",
 "wasou-bag": "assets/svg/item/women-item-wasou-bag.png",
+"hoshitsuki-beads": "assets/svg/item/women-item-hoshitsuki-beads.png",
+"asagao-bamboo": "assets/svg/item/women-item-asagao-bamboo.png",
+"retro-gamaguchi": "assets/svg/item/women-item-retro-gamaguchi.png",   
 },
+
   men: {
     shingen: "assets/svg/item/men-item-shingen.png",
     sensu: "assets/svg/item/men-item-sensu.png",
@@ -586,6 +590,21 @@ men: [
         label: "小さめ和装バッグ",
         orderText: "小さめの和装バッグ",
       },
+      {
+  id: "hoshitsuki-beads",
+  label: "星月ビーズバッグ",
+  orderText: "星月モチーフのビーズバッグ",
+},
+{
+  id: "asagao-bamboo",
+  label: "朝顔バンブーバッグ",
+  orderText: "朝顔柄のバンブーハンドルバッグ",
+},
+{
+  id: "retro-gamaguchi",
+  label: "レトロがま口バッグ",
+  orderText: "レトロながま口バッグ",
+},
     ],
 
 men: [
