@@ -552,3 +552,19 @@ body {
   background-size: auto, 80px 48px, 80px 48px, 80px 48px, 80px 48px;
   background-color: #faf7f0;
 }
+
+.hero {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 250, 241, 0.82));
+}
+
+body {
+  background:
+    linear-gradient(rgba(250, 247, 240, 0.72), rgba(250, 247, 240, 0.72)),
+    radial-gradient(circle at 20px 20px, rgba(92, 128, 164, 0.24) 2px, transparent 2.5px),
+    radial-gradient(circle at 20px 20px, transparent 18px, rgba(92, 128, 164, 0.2) 18.5px, transparent 19px),
+    radial-gradient(circle at 60px 20px, transparent 18px, rgba(92, 128, 164, 0.2) 18.5px, transparent 19px),
+    radial-gradient(circle at 40px 54px, transparent 18px, rgba(92, 128, 164, 0.2) 18.5px, transparent 19px);
+  background-size: auto, 80px 48px, 80px 48px, 80px 48px, 80px 48px;
+  background-color: #faf7f0;
+}
