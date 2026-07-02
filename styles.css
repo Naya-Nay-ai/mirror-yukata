@@ -632,3 +632,14 @@ body {
   background-size: auto, cover;
   background-position: center, center top;
 }
+@media (max-width: 720px) {
+  body {
+    background:
+      linear-gradient(rgba(250, 247, 240, 0.58), rgba(250, 247, 240, 0.58)),
+      url("assets/ui/bg-gofuku-shop.png");
+    background-color: #faf7f0;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: center, 18% top;
+  }
+}
