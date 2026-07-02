@@ -568,14 +568,22 @@ body {
   background-size: auto, 80px 48px, 80px 48px, 80px 48px, 80px 48px;
   background-color: #faf7f0;
 }
+
 /* ===========================
    App Footer / Copyright
 =========================== */
 
 .app-footer {
-  margin-top: 32px;
+  width: min(100% - 32px, 960px);
+  box-sizing: border-box;
+  margin: 32px auto 0;
   padding: 22px 12px 26px;
   text-align: center;
+
+  display: block;
+  position: relative;
+  z-index: 10;
+
   border-top: 1px solid rgba(120, 92, 62, 0.18);
   color: rgba(72, 55, 42, 0.72);
 }
@@ -600,6 +608,7 @@ body {
 
 @media (max-width: 520px) {
   .app-footer {
+    width: min(100% - 20px, 960px);
     margin-top: 24px;
     padding: 18px 10px 22px;
   }
