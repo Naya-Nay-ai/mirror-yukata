@@ -80,6 +80,10 @@ kago: "assets/svg/item/women-item-kago.png",
 "hoshitsuki-beads": "assets/svg/item/women-item-hoshitsuki-beads.png",
 "asagao-bamboo": "assets/svg/item/women-item-asagao-bamboo.png",
 "retro-gamaguchi": "assets/svg/item/women-item-retro-gamaguchi.png",   
+"retro-flower-gamaguchi": "assets/svg/item/women-item-retro-flower-gamaguchi.png",
+"kurage-kinchaku": "assets/svg/item/women-item-kurage-kinchaku.png",
+"black-bamboo": "assets/svg/item/women-item-black-bamboo.png",
+yumekawa: "assets/svg/item/women-item-yumekawa.png",    
 },
 
   men: {
@@ -605,6 +609,26 @@ men: [
   label: "レトロがま口バッグ",
   orderText: "レトロながま口バッグ",
 },
+{
+  id: "retro-flower-gamaguchi",
+  label: "レトロ花がま口",
+  orderText: "レトロな花柄のがま口バッグ",
+},
+{
+  id: "kurage-kinchaku",
+  label: "くらげ巾着",
+  orderText: "海月モチーフの幻想的な巾着バッグ",
+},
+{
+  id: "black-bamboo",
+  label: "黒かごバッグ",
+  orderText: "黒い編みかごバッグ",
+},
+{
+  id: "yumekawa",
+  label: "ゆめかわ巾着",
+  orderText: "淡いピンクのゆめかわ巾着バッグ",
+},  
     ],
 
 men: [
