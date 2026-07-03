@@ -63,8 +63,11 @@ const patternPreviewAssets = {
     stripe: "assets/svg/patterns/men-stripe.png",
     ichimatsu: "assets/svg/patterns/men-ichimatsu.png",
     ryusui: "assets/svg/patterns/men-ryusui.png",
-    tonbo: "assets/svg/patterns/men-tonbo.png",
     geometric: "assets/svg/patterns/men-geometric.png",
+    kasumi: "assets/svg/patterns/men-kasumi.png",
+    yagasuri: "assets/svg/patterns/men-yagasuri.png",
+    "yabure-goushi": "assets/svg/patterns/men-yabure-goushi.png",
+    yukiwa: "assets/svg/patterns/men-yukiwa.png",
   },
 };
 
