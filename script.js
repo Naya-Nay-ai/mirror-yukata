@@ -416,14 +416,6 @@ const options = {
         orderText: "流水柄",
       },
       {
-        id: "tonbo",
-        label: "とんぼ",
-        category: "王道",
-        namePart: "とんぼ",
-        mood: "夏らしい",
-        orderText: "とんぼ柄",
-      },
-      {
         id: "geometric",
         label: "幾何学",
         category: "モダン",
@@ -434,23 +426,35 @@ const options = {
       {
         id: "kasumi",
         label: "霞文",
-        orderText: "霞文の男性浴衣",
-       },
-       {
+        category: "古典",
+        namePart: "霞文",
+        mood: "風情のある",
+        orderText: "霞文柄",
+      },
+      {
         id: "yagasuri",
         label: "矢絣",
-        orderText: "矢絣の男性浴衣",
-       
-       {
+        category: "古典",
+        namePart: "矢絣",
+        mood: "粋な",
+        orderText: "矢絣柄",
+      },
+      {
         id: "yabure-goushi",
         label: "破れ格子",
-        orderText: "破れ格子の男性浴衣",
-       },
-       {
+        category: "モダン",
+        namePart: "破れ格子",
+        mood: "洒落た",
+        orderText: "破れ格子柄",
+      },
+      {
         id: "yukiwa",
         label: "雪輪",
-        orderText: "雪輪の男性浴衣",
-       },
+        category: "古典",
+        namePart: "雪輪",
+        mood: "上品な",
+        orderText: "雪輪柄",
+      },
        ],
       },
 
