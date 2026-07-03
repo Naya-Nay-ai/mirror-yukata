@@ -428,7 +428,27 @@ const options = {
         mood: "モダンな",
         orderText: "幾何学柄",
       },
-      ],
+      {
+        id: "kasumi",
+        label: "霞文",
+        orderText: "霞文の男性浴衣",
+       },
+       {
+        id: "yagasuri",
+        label: "矢絣",
+        orderText: "矢絣の男性浴衣",
+       
+       {
+        id: "yabure-goushi",
+        label: "破れ格子",
+        orderText: "破れ格子の男性浴衣",
+       },
+       {
+        id: "yukiwa",
+        label: "雪輪",
+        orderText: "雪輪の男性浴衣",
+       },
+       ],
       },
 
   obi: {
