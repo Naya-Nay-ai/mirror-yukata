@@ -68,6 +68,9 @@ const patternPreviewAssets = {
     yagasuri: "assets/svg/patterns/men-yagasuri.png",
     "yabure-goushi": "assets/svg/patterns/men-yabure-goushi.png",
     yukiwa: "assets/svg/patterns/men-yukiwa.png",
+    sumika: "assets/svg/patterns/men-sumika.png",
+    hasu: "assets/svg/patterns/men-hasu.png",
+    shirotsubaki: "assets/svg/patterns/men-shirotsubaki.png",
   },
 };
 
@@ -455,6 +458,30 @@ const options = {
         mood: "上品な",
         orderText: "雪輪柄",
       },
+      {
+      id: "sumika",
+      label: "墨花",
+      category: "モダン",
+      namePart: "墨花",
+      mood: "洒落た",
+      orderText: "墨花柄",
+      },
+      {
+      id: "hasu",
+      label: "蓮",
+      category: "古典",
+      namePart: "蓮",
+      mood: "静謐な",
+      orderText: "蓮柄",
+    },
+      {
+      id: "shirotsubaki",
+      label: "白椿",
+      category: "古典",
+      namePart: "白椿",
+      mood: "上品な",
+      orderText: "白椿柄",
+    },
        ],
       },
 
