@@ -1186,14 +1186,14 @@ if (defaults) {
   renderCard();
 }
 
-function setCopyStatus(message) {
-  if (!copyOrderTextStatus) return;
+function setCopyStatus(statusElement, message) {
+  if (!statusElement) return;
 
-  copyOrderTextStatus.textContent = message;
+  statusElement.textContent = message;
 
   if (message) {
     window.setTimeout(() => {
-      copyOrderTextStatus.textContent = "";
+      statusElement.textContent = "";
     }, 1800);
   }
 }
@@ -1218,7 +1218,7 @@ async function copyOrderText() {
   const text = orderText.textContent.trim();
 
   if (!text) {
-    setCopyStatus("コピーする文がありません");
+   setCopyStatus(copyOrderTextStatus, "コピーする文がありません");
     return;
   }
 
@@ -1229,9 +1229,9 @@ async function copyOrderText() {
       throw new Error("copy failed");
     }
 
-    setCopyStatus("コピーしました");
+    setCopyStatus(copyOrderTextStatus, "コピーしました");
   } catch (error) {
-    setCopyStatus("コピーに失敗しました");
+    setCopyStatus(copyOrderTextStatus, "コピーに失敗しました");
   }
 }
 
