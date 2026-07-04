@@ -980,6 +980,31 @@ const baseParts = [
   return `${baseParts.join("、")}。髪型・顔立ち・体型・固定アクセサリーは元のアバター設定を優先してください。`;
 }
 
+function labelsToText(values) {
+  return values.map((value) => value.label).join(" / ");
+}
+
+function createOptionsText() {
+  return [
+    "夏夜ゆかた帖 選択肢一覧",
+    "",
+    "【女性浴衣】",
+    `浴衣の色：${labelsToText(options.yukataColors.women)}`,
+    `柄：${labelsToText(options.patterns.women)}`,
+    `帯：${labelsToText(options.obi.women)}`,
+    `小物：${labelsToText(options.items.women)}`,
+    `履物：${labelsToText(options.footwear.women)}`,
+    `キモノアレンジ：${labelsToText(options.arrangeSets)}`,
+    "",
+    "【男性浴衣】",
+    `浴衣の色：${labelsToText(options.yukataColors.men)}`,
+    `柄：${labelsToText(options.patterns.men)}`,
+    `帯：${labelsToText(options.obi.men)}`,
+    `小物：${labelsToText(options.items.men)}`,
+    `履物：${labelsToText(options.footwear.men)}`,
+  ].join("\n");
+}
+
 function createChip(label, color) {
   const chip = document.createElement("span");
   chip.className = "chip";
