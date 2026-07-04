@@ -25,6 +25,8 @@ const yukataObiTexturePreview = document.querySelector("#yukataObiTexturePreview
 
 const copyOrderTextButton = document.querySelector("#copyOrderTextButton");
 const copyOrderTextStatus = document.querySelector("#copyOrderTextStatus");
+const copyOptionsTextButton = document.querySelector("#copyOptionsTextButton");
+const copyOptionsTextStatus = document.querySelector("#copyOptionsTextStatus");
 
 const previewAssets = {
   women: {
