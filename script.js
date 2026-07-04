@@ -25,6 +25,8 @@ const yukataObiTexturePreview = document.querySelector("#yukataObiTexturePreview
 
 const copyOrderTextButton = document.querySelector("#copyOrderTextButton");
 const copyOrderTextStatus = document.querySelector("#copyOrderTextStatus");
+const copyOptionsTextButton = document.querySelector("#copyOptionsTextButton");
+const copyOptionsTextStatus = document.querySelector("#copyOptionsTextStatus");
 
 const previewAssets = {
   women: {
@@ -978,6 +980,31 @@ const baseParts = [
   return `${baseParts.join("、")}。髪型・顔立ち・体型・固定アクセサリーは元のアバター設定を優先してください。`;
 }
 
+function labelsToText(values) {
+  return values.map((value) => value.label).join(" / ");
+}
+
+function createOptionsText() {
+  return [
+    "夏夜ゆかた帖 選択肢一覧",
+    "",
+    "【女性浴衣】",
+    `浴衣の色：${labelsToText(options.yukataColors.women)}`,
+    `柄：${labelsToText(options.patterns.women)}`,
+    `帯：${labelsToText(options.obi.women)}`,
+    `小物：${labelsToText(options.items.women)}`,
+    `履物：${labelsToText(options.footwear.women)}`,
+    `キモノアレンジ：${labelsToText(options.arrangeSets)}`,
+    "",
+    "【男性浴衣】",
+    `浴衣の色：${labelsToText(options.yukataColors.men)}`,
+    `柄：${labelsToText(options.patterns.men)}`,
+    `帯：${labelsToText(options.obi.men)}`,
+    `小物：${labelsToText(options.items.men)}`,
+    `履物：${labelsToText(options.footwear.men)}`,
+  ].join("\n");
+}
+
 function createChip(label, color) {
   const chip = document.createElement("span");
   chip.className = "chip";
@@ -1184,14 +1211,14 @@ if (defaults) {
   renderCard();
 }
 
-function setCopyStatus(message) {
-  if (!copyOrderTextStatus) return;
+function setCopyStatus(statusElement, message) {
+  if (!statusElement) return;
 
-  copyOrderTextStatus.textContent = message;
+  statusElement.textContent = message;
 
   if (message) {
     window.setTimeout(() => {
-      copyOrderTextStatus.textContent = "";
+      statusElement.textContent = "";
     }, 1800);
   }
 }
@@ -1216,7 +1243,7 @@ async function copyOrderText() {
   const text = orderText.textContent.trim();
 
   if (!text) {
-    setCopyStatus("コピーする文がありません");
+   setCopyStatus(copyOrderTextStatus, "コピーする文がありません");
     return;
   }
 
@@ -1227,9 +1254,25 @@ async function copyOrderText() {
       throw new Error("copy failed");
     }
 
-    setCopyStatus("コピーしました");
+    setCopyStatus(copyOrderTextStatus, "コピーしました");
   } catch (error) {
-    setCopyStatus("コピーに失敗しました");
+    setCopyStatus(copyOrderTextStatus, "コピーに失敗しました");
+  }
+}
+
+async function copyOptionsText() {
+  const text = createOptionsText();
+
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+    } else if (!fallbackCopyText(text)) {
+      throw new Error("copy failed");
+    }
+
+    setCopyStatus(copyOptionsTextStatus, "選択肢一覧をコピーしました");
+  } catch (error) {
+    setCopyStatus(copyOptionsTextStatus, "コピーに失敗しました");
   }
 }
 
@@ -1252,6 +1295,10 @@ function init() {
 
 if (copyOrderTextButton) {
   copyOrderTextButton.addEventListener("click", copyOrderText);
+}
+
+if (copyOptionsTextButton) {
+  copyOptionsTextButton.addEventListener("click", copyOptionsText);
 }
   
   refreshOptionsForType();
