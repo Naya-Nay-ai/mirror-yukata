@@ -1295,9 +1295,10 @@ function init() {
 
 if (copyOrderTextButton) {
   copyOrderTextButton.addEventListener("click", copyOrderText);
+}
+
 if (copyOptionsTextButton) {
   copyOptionsTextButton.addEventListener("click", copyOptionsText);
-}
 }
   
   refreshOptionsForType();
