@@ -1260,6 +1260,22 @@ async function copyOrderText() {
   }
 }
 
+async function copyOptionsText() {
+  const text = createOptionsText();
+
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+    } else if (!fallbackCopyText(text)) {
+      throw new Error("copy failed");
+    }
+
+    setCopyStatus(copyOptionsTextStatus, "選択肢一覧をコピーしました");
+  } catch (error) {
+    setCopyStatus(copyOptionsTextStatus, "コピーに失敗しました");
+  }
+}
+
 function init() {
   fillSelect(styleTypeSelect, options.styleTypes);
   fillSelect(arrangeSelect, options.arrangeSets);
@@ -1279,6 +1295,9 @@ function init() {
 
 if (copyOrderTextButton) {
   copyOrderTextButton.addEventListener("click", copyOrderText);
+if (copyOptionsTextButton) {
+  copyOptionsTextButton.addEventListener("click", copyOptionsText);
+}
 }
   
   refreshOptionsForType();
