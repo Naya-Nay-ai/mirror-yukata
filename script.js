@@ -58,6 +58,7 @@ const patternPreviewAssets = {
     neko: "assets/svg/patterns/women-neko.png",
     "geometric-pop": "assets/svg/patterns/women-geometric-pop.png",
     "star-pop": "assets/svg/patterns/women-star-pop.png",
+    paisley: "assets/svg/patterns/women-paisley.png",
     
   },
   
@@ -73,6 +74,7 @@ const patternPreviewAssets = {
     sumika: "assets/svg/patterns/men-sumika.png",
     hasu: "assets/svg/patterns/men-hasu.png",
     shirotsubaki: "assets/svg/patterns/men-shirotsubaki.png",
+    ortega: "assets/svg/patterns/men-ortega.png",
   },
 };
 
@@ -409,6 +411,14 @@ const options = {
         mood: "幻想的な",
         orderText: "月夜を思わせるグラデーション柄",
       },
+      {
+        id: "paisley",
+        label: "ペイズリー",
+        category: "エスニック",
+        namePart: "ペイズリー",
+        mood: "エスニックな",
+        orderText: "ペイズリー柄",
+       }
        {
         id: "neko",
        label: "猫",
@@ -532,6 +542,14 @@ const options = {
       mood: "静謐な",
       orderText: "蓮柄",
     },
+      {
+      id: "ortega",
+      label: "オルテガ",
+      category: "エスニック",
+      namePart: "オルテガ",
+      mood: "エスニックな",
+      orderText: "オルテガ柄",
+    }
       {
       id: "shirotsubaki",
       label: "白椿",
