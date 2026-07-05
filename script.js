@@ -418,7 +418,7 @@ const options = {
         namePart: "ペイズリー",
         mood: "エスニックな",
         orderText: "ペイズリー柄",
-       }
+       },
        {
         id: "neko",
        label: "猫",
@@ -549,7 +549,7 @@ const options = {
       namePart: "オルテガ",
       mood: "エスニックな",
       orderText: "オルテガ柄",
-    }
+    },
       {
       id: "shirotsubaki",
       label: "白椿",
