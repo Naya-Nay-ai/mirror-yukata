@@ -556,23 +556,7 @@ const options = {
       mood: "静謐な",
       orderText: "蓮柄",
     },
-      {
-      id: "ortega",
-      label: "オルテガ",
-      category: "エスニック",
-      namePart: "オルテガ",
-      mood: "エスニックな",
-      orderText: "オルテガ柄",
-    },
-      {
-       id: "retro-pop",
-       label: "80sレトロポップ",
-       category: "ポップ",
-       namePart: "80sレトロポップ",
-       mood: "レトロポップな",
-       orderText: "80sレトロポップ柄",
-     },
-      {
+    {
       id: "shirotsubaki",
       label: "白椿",
       category: "古典",
@@ -580,6 +564,22 @@ const options = {
       mood: "上品な",
       orderText: "白椿柄",
     },
+    {
+      id: "ortega",
+      label: "オルテガ",
+      category: "エスニック",
+      namePart: "オルテガ",
+      mood: "エスニックな",
+      orderText: "オルテガ柄",
+    },
+     {
+       id: "retro-pop",
+       label: "80sレトロポップ",
+       category: "ポップ",
+       namePart: "80sレトロポップ",
+       mood: "レトロポップな",
+       orderText: "80sレトロポップ柄",
+     },
        ],
       },
 
