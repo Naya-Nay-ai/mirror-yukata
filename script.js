@@ -59,6 +59,7 @@ const patternPreviewAssets = {
     "geometric-pop": "assets/svg/patterns/women-geometric-pop.png",
     "star-pop": "assets/svg/patterns/women-star-pop.png",
     paisley: "assets/svg/patterns/women-paisley.png",
+    assets/"svg/patterns/women-cream-soda.png",
     
   },
   
@@ -75,6 +76,7 @@ const patternPreviewAssets = {
     hasu: "assets/svg/patterns/men-hasu.png",
     shirotsubaki: "assets/svg/patterns/men-shirotsubaki.png",
     ortega: "assets/svg/patterns/men-ortega.png",
+   "retro-pop": "assets/svg/patterns/men-retro-pop.png",
   },
 };
 
@@ -435,14 +437,22 @@ const options = {
        mood: "軽やかでモダンな",
        orderText: "幾何ポップ柄",
        },
-{
-  id: "dot-pop",
-  label: "ドット",
-  category: "ポップ",
-  namePart: "ドット",
-  mood: "軽やかな",
-  orderText: "ドット柄",
-},
+     {
+       id: "dot-pop",
+       label: "ドット",
+       category: "ポップ",
+       namePart: "ドット",
+       mood: "軽やかな",
+       orderText: "ドット柄",
+     },
+      {
+       id: "cream-soda",
+       label: "クリームソーダ",
+       category: "ポップ",
+       namePart: "クリームソーダ",
+       mood: "レトロポップな",
+       orderText: "クリームソーダ柄",
+     }
        {
        id: "star-pop",
        label: "星あそび",
@@ -550,6 +560,14 @@ const options = {
       mood: "エスニックな",
       orderText: "オルテガ柄",
     },
+      {
+       id: "retro-pop",
+       label: "80sレトロポップ",
+       category: "ポップ",
+       namePart: "80sレトロポップ",
+       mood: "レトロポップな",
+       orderText: "80sレトロポップ柄",
+     }
       {
       id: "shirotsubaki",
       label: "白椿",
