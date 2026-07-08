@@ -452,7 +452,7 @@ const options = {
        namePart: "クリームソーダ",
        mood: "レトロポップな",
        orderText: "クリームソーダ柄",
-     }
+     },
        {
        id: "star-pop",
        label: "星あそび",
@@ -567,7 +567,7 @@ const options = {
        namePart: "80sレトロポップ",
        mood: "レトロポップな",
        orderText: "80sレトロポップ柄",
-     }
+     },
       {
       id: "shirotsubaki",
       label: "白椿",
