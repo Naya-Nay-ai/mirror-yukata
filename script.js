@@ -59,7 +59,7 @@ const patternPreviewAssets = {
     "geometric-pop": "assets/svg/patterns/women-geometric-pop.png",
     "star-pop": "assets/svg/patterns/women-star-pop.png",
     paisley: "assets/svg/patterns/women-paisley.png",
-    assets/"svg/patterns/women-cream-soda.png",
+    "cream-soda": "assets/svg/patterns/women-cream-soda.png",
     
   },
   
