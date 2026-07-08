@@ -455,7 +455,7 @@ const options = {
        category: "ポップ",
        namePart: "クリームソーダ",
        mood: "レトロポップな",
-       orderText: "クリームソーダ柄",
+       orderText: "クリームソーダとチェリー柄",
      },
        {
        id: "star-pop",
@@ -578,7 +578,7 @@ const options = {
        category: "ポップ",
        namePart: "80sレトロポップ",
        mood: "レトロポップな",
-       orderText: "80sレトロポップ柄",
+       orderText: "80sポップアイコン柄",
      },
        ],
       },
