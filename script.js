@@ -96,9 +96,9 @@ kago: "assets/svg/item/women-item-kago.png",
 "kurage-kinchaku": "assets/svg/item/women-item-kurage-kinchaku.png",
 "black-bamboo": "assets/svg/item/women-item-black-bamboo.png",
 yumekawa: "assets/svg/item/women-item-yumekawa.png",    
-"check-pop": "assets/svg/patterns/women-item-check-pop.png",
-"clear-bag": "assets/svg/patterns/women-item-clear-bag.png",
-record: "assets/svg/patterns/women-item-record.png",
+"check-pop": "assets/svg/item/women-item-check-pop.png",
+"clear-bag": "assets/svg/item/women-item-clear-bag.png",
+record: "assets/svg/item/women-item-record.png",
    
 },
 
