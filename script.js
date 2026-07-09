@@ -113,14 +113,14 @@ const footwearPreviewAssets = {
   "shiroki-geta": "assets/svg/footwear/women-footwear-shiroki-geta.png",
   "black-geta": "assets/svg/footwear/women-footwear-black-geta.png",
   zori: "assets/svg/footwear/women-footwear-zori.png",
+  sposan: "assets/svg/footwear/women-footwear-clear-sposan.png",
+  "clear-zouri": "assets/svg/footwear/women-footwear-clear-zouri.png",   
   },
   men: {
-    yakigeta:
-      "assets/svg/footwear/men-footwear-yakigeta.png",
-    "black-hanao-geta":
-      "assets/svg/footwear/men-footwear-black-hanao-geta.png",
-    setta:
-      "assets/svg/footwear/men-footwear-setta.png",
+    yakigeta: "assets/svg/footwear/men-footwear-yakigeta.png",
+    "black-hanao-geta": "assets/svg/footwear/men-footwear-black-hanao-geta.png",
+    setta: "assets/svg/footwear/men-footwear-setta.png",
+    "men-sposan": "assets/svg/footwear/men-footwear-sposan.png",
   },
 };
 const arrangePreviewAssets = {
@@ -839,6 +839,17 @@ footwear: {
       label: "草履",
       orderText: "草履",
     },
+    {
+      id: "sposan",
+      label: "厚底スポーツサンダル",
+      orderText: "ポップなクリアバンドの厚底スポーツサンダル",
+    },
+    {
+      id: "clear-zouri",
+      label: "クリア草履",
+      orderText: "涼し気なクリア素材の草履",
+    },
+
 ],
 
   men: [
@@ -857,6 +868,11 @@ footwear: {
       label: "雪駄",
       orderText: "雪駄",
     },
+     {
+      id: "men-sposan",
+      label: "スポーツサンダル",
+      orderText: "シンプルなスポーツサンダル",
+     },
   ],
 },
   
