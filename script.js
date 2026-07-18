@@ -60,7 +60,7 @@ const patternPreviewAssets = {
     "star-pop": "assets/svg/patterns/women-star-pop.png",
     paisley: "assets/svg/patterns/women-paisley.png",
     "cream-soda": "assets/svg/patterns/women-cream-soda.png",
-    
+    "sea-sweets": "assets/svg/patterns/women-sea-sweets.png",
   },
   
   men: {
@@ -76,7 +76,8 @@ const patternPreviewAssets = {
     hasu: "assets/svg/patterns/men-hasu.png",
     shirotsubaki: "assets/svg/patterns/men-shirotsubaki.png",
     ortega: "assets/svg/patterns/men-ortega.png",
-   "retro-pop": "assets/svg/patterns/men-retro-pop.png",
+    "retro-pop": "assets/svg/patterns/men-retro-pop.png",
+    "shell-wave": "assets/svg/patterns/men-shell.png",
   },
 };
 
@@ -465,6 +466,14 @@ const options = {
        mood: "きらめく",
        orderText: "星あそび柄",
        },
+      {
+      id: "sea-sweets",
+      label: "シースイーツ",
+      category: "ポップ",
+      namePart: "シースイーツ",
+      mood: "甘くてポップな",
+      orderText: "貝がらとスイーツのポップ柄",
+    },
     ],
 
     men: [
@@ -580,6 +589,14 @@ const options = {
        mood: "レトロポップな",
        orderText: "80sポップアイコン柄",
      },
+      {
+      id: "shell-wave",
+      label: "シェルウェーブ",
+      category: "夏柄",
+      namePart: "シェルウェーブ",
+      mood: "涼やかな",
+      orderText: "貝がらと波の柄",
+    },
        ],
       },
 
